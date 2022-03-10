@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="56" viewBox="0 0 192 56">
+  <g id="Grupo_19276" data-name="Grupo 19276" transform="translate(0 -261)">
+    <g id="BtnTertiaryIcon" transform="translate(68 261)">
+      <g id="Retângulo_1555" data-name="Retângulo 1555" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1">
+        <rect width="56" height="56" rx="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" fill="none"/>
+      </g>
+      <g id="IconAppleStore" transform="translate(12 12)">
+        <rect id="Retângulo_1554" data-name="Retângulo 1554" width="32" height="32" fill="none" opacity="0"/>
+        <g id="logo-apple" transform="translate(-59.981 -32)">
+          <path id="Caminho_414" data-name="Caminho 414" d="M81.807,136.86c-2.521,0-3.586,1.2-5.341,1.2-1.8,0-3.173-1.194-5.357-1.194a7.309,7.309,0,0,0-5.866,3.529c-2.033,3.136-1.688,9.041,1.6,14.072,1.178,1.8,2.751,3.821,4.814,3.843H71.7c1.793,0,2.325-1.174,4.793-1.188h.038c2.431,0,2.918,1.181,4.7,1.181h.038c2.063-.022,3.72-2.26,4.9-4.054a19.505,19.505,0,0,0,1.813-3.4,6.164,6.164,0,0,1-.818-11.149,7.11,7.11,0,0,0-5.363-2.843Z" transform="translate(0 -98.305)" fill="#231f20"/>
+          <path id="Caminho_415" data-name="Caminho 415" d="M254.209,32a6.6,6.6,0,0,0-4.276,2.3,5.691,5.691,0,0,0-1.4,4.433h.12a5.622,5.622,0,0,0,4.188-2.195A6.1,6.1,0,0,0,254.209,32Z" transform="translate(-172.957)" fill="#231f20"/>
+        </g>
+      </g>
+    </g>
+    <g id="BtnTertiaryIcon-2" data-name="BtnTertiaryIcon" transform="translate(136 261)">
+      <g id="Retângulo_1555-2" data-name="Retângulo 1555" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1">
+        <rect width="56" height="56" rx="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" fill="none"/>
+      </g>
+      <g id="IconWebSite32" transform="translate(12 12)">
+        <rect id="Retângulo_1554-2" data-name="Retângulo 1554" width="32" height="32" fill="none" opacity="0"/>
+        <path id="Caminho_57035" data-name="Caminho 57035" d="M1322.561,258.481a12,12,0,1,1,12-12A12.013,12.013,0,0,1,1322.561,258.481Zm-2.379-10.8c.206,5.519,1.8,8.4,2.379,8.4s2.171-2.881,2.377-8.4Zm7.157,0a22.938,22.938,0,0,1-1.469,7.812,9.628,9.628,0,0,0,6.215-7.812Zm-14.3,0a9.628,9.628,0,0,0,6.215,7.812,22.973,22.973,0,0,1-1.469-7.812Zm14.3-2.4h4.746a9.628,9.628,0,0,0-6.215-7.811A22.936,22.936,0,0,1,1327.339,245.281Zm-7.157,0h4.756c-.206-5.518-1.8-8.4-2.377-8.4S1320.389,239.763,1320.183,245.281Zm-7.147,0h4.746a22.971,22.971,0,0,1,1.469-7.811A9.628,9.628,0,0,0,1313.036,245.281Z" transform="translate(-1306.561 -230.48)" fill="#231f20"/>
+      </g>
+    </g>
+    <g id="BtnTertiaryIcon-3" data-name="BtnTertiaryIcon" transform="translate(0 261)">
+      <g id="Retângulo_1555-3" data-name="Retângulo 1555" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1">
+        <rect width="56" height="56" rx="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" fill="none"/>
+      </g>
+      <g id="IconGooglePlayStore" transform="translate(12 12)">
+        <rect id="Retângulo_1554-3" data-name="Retângulo 1554" width="32" height="32" fill="none" opacity="0"/>
+        <path id="Caminho_57029" data-name="Caminho 57029" d="M33.1.306a2.082,2.082,0,0,0-2-.1l10.775,10.8L45.4,7.469Zm-2.988.9a2.2,2.2,0,0,0-.209.938V21.9a2.112,2.112,0,0,0,.211.928L40.884,12.006ZM41.878,13,31.12,23.81a2.111,2.111,0,0,0,.893.19,2.089,2.089,0,0,0,1.087-.293l12.3-7.174Zm8.206-2.8-.013-.008L46.656,8.2,42.87,12l3.788,3.8,3.426-2a2.11,2.11,0,0,0,0-3.606Z" transform="translate(-24.902 4)" fill="#231f20"/>
+      </g>
+    </g>
+  </g>
+</svg>

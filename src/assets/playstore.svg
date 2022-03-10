@@ -1,0 +1,10 @@
+<svg id="BtnTertiaryIcon" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="Retângulo_1555" data-name="Retângulo 1555" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1">
+    <rect width="56" height="56" rx="28" stroke="none"/>
+    <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" fill="none"/>
+  </g>
+  <g id="IconGooglePlayStore" transform="translate(12 12)">
+    <rect id="Retângulo_1554" data-name="Retângulo 1554" width="32" height="32" fill="none" opacity="0"/>
+    <path id="Caminho_57029" data-name="Caminho 57029" d="M33.1.306a2.082,2.082,0,0,0-2-.1l10.775,10.8L45.4,7.469Zm-2.988.9a2.2,2.2,0,0,0-.209.938V21.9a2.112,2.112,0,0,0,.211.928L40.884,12.006ZM41.878,13,31.12,23.81a2.111,2.111,0,0,0,.893.19,2.089,2.089,0,0,0,1.087-.293l12.3-7.174Zm8.206-2.8-.013-.008L46.656,8.2,42.87,12l3.788,3.8,3.426-2a2.11,2.11,0,0,0,0-3.606Z" transform="translate(-24.902 4)" fill="#231f20"/>
+  </g>
+</svg>
