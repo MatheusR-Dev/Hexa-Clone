@@ -4,7 +4,11 @@ import Soluctions from '../Soluctions';
 
 import { Container } from './styles';
 
-const Layout: React.FC = () => {
+interface MainProps {
+  active?: string;
+}
+
+const Layout: React.FC<MainProps> = () => {
   return (
     <>
       <Container>

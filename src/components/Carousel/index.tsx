@@ -1,6 +1,5 @@
-import React, { useState, useRef } from 'react';
-import { AnimationEventHandler } from 'react';
-import { EffectFrame, Caroulsel, Dive, GetzFood, Header, ImageButton, ScreenIcon, ScreenImg, ScreenLayout, ScreenP, ScreenRed, Screens, ScreenTitle, Teste } from './styles';
+import React, { useEffect, useState } from 'react';
+import { Caroulsel, Dive, GetzFood, Header, ImageButton, ScreenIcon, ScreenImg, ScreenLayout, ScreenP, ScreenRed, Screens, ScreenTitle, Teste, Tracinho } from './styles';
 import { Data } from './CarouselData'
 import Micro from '../../assets/micrologo.svg'
 import Getz from '../../assets/logogetz.svg'
@@ -9,9 +8,14 @@ import Entrega from '../../assets/entrega.svg'
 import WhiteL from '../../assets/whitel.svg'
 import Rdio from '../../assets/hexaradio.svg'
 import Epedidos from '../../assets/epedido.svg'
+import Tracinhoo from '../../assets/tracinho.svg'
 
 const Effect = {
-  transform: `translateX(-30px) translateZ(0px)`
+  transform: `translateX(calc(2px)) translateZ(0px)`
+}
+
+const tezte = {
+  width: `calc(100% / 7)`
 }
 
 export default function Carousel() {
@@ -21,6 +25,7 @@ export default function Carousel() {
   const [ image, setImage ] = useState(Data.GetzFood[0].Image)
   const [ color, setColor ] = useState(`#16355A`)
   const [ change, setChange] = useState(Effect)
+  const [ largura, setLargura ] = useState(tezte)
 
   function Switch (){
     setTitle(Data.GetzEntrega[0].Title)
@@ -28,7 +33,7 @@ export default function Carousel() {
     setImage(Data.GetzEntrega[0].Image)
     setText(Data.GetzEntrega[0].Text)
     setColor(`#1082FF`)
-    setChange({transform: `translateX(-980.857px) translateZ(0px)`})
+    setChange({transform: `translateX(calc(-44.5%)) translateZ(0px)`})
   }
 
   function Switch2 (){
@@ -37,7 +42,7 @@ export default function Carousel() {
     setImage(Data.GetzGestor[0].Image)
     setText(Data.GetzGestor[0].Text)
     setColor(`#7438FF`)
-    setChange({transform: `translateX(-320.286px) translateZ(0px)`})
+    setChange({transform: `translateX(calc(-15%)) translateZ(0px)`})
   }
 
   function Switch3 (){
@@ -46,7 +51,7 @@ export default function Carousel() {
     setImage(Data.GetzFood[0].Image)
     setText(Data.GetzFood[0].Text)
     setColor(`#EB3340`)
-    setChange({transform: `translateX(-10px) translateZ(0px)`})
+    setChange({transform: `translateX(calc(100% - 100%)) translateZ(0px)`})
   }
 
   function Switch4 (){
@@ -55,7 +60,7 @@ export default function Carousel() {
     setImage(Data.EPedido[0].Image)
     setText(Data.EPedido[0].Text)
     setColor(`#F9B61B`)
-    setChange({transform: `translateX(330px) translateZ(0px)`})
+    setChange({transform: `translateX(calc(14.5%)) translateZ(0px)`})
   }
 
   function Switch5 (){
@@ -63,7 +68,7 @@ export default function Carousel() {
     setImage(Data.HexaRadio[0].Image)
     setText(Data.HexaRadio[0].Text)
     setColor(`#EB3340`)
-    setChange({transform: `translateX(970px) translateZ(0px)`})
+    setChange({transform: `translateX(calc(44%)) translateZ(0px)`})
   }
 
   function Switch6 (){
@@ -72,7 +77,7 @@ export default function Carousel() {
     setImage(Data.MicroBank[0].Image)
     setText(Data.MicroBank[0].Text)
     setColor(`#16355A`)
-    setChange({transform: `translateX(-660px) translateZ(0px)`})
+    setChange({transform: `translateX(calc(-29.5%)) translateZ(0px)`})
   }
 
   function Switch7 (){
@@ -81,55 +86,53 @@ export default function Carousel() {
     setImage(Data.Whitelabel[0].Image)
     setText(Data.Whitelabel[0].Text)
     setColor(`#1082FF`)
-    setChange({transform: `translateX(630px) translateZ(0px)`})
+    setChange({transform: `translateX(calc(29%)) translateZ(0px)`})
   }
 
-  window.addEventListener('resize',function(){
-  var largura = window.screen.width
-  var altura = window.screen.height
-  console.log(largura, altura)
-  })
+  // const changeCarousel = useRef<HTMLDivElement>(null)
 
-  const changeCarousel = useRef<HTMLDivElement>(null)
-
-  function onButtonClick(id: number) {
-    setChange({transform: `translateX(${50 - id}px)`})
-  }
-
-
+  // function onButtonClick(id: number) {
+  //   setChange({transform: `translateX(${50 - id}px)`})
+  // }
+//   let teste = 0
+//   window.onresize = function() {
+//     window.innerWidth = teste
+// };
+// console.log(largura)
   return(
     <>
         <Caroulsel>
        <Teste>
-        <Header ref={changeCarousel} style={{transform:`${change.transform}`}}>
-            <GetzFood onClick={() => onButtonClick(1)}>
-              <ImageButton src={Rdio}/>
+        <Header  style={{transform:`${change.transform}`}}>
+            <GetzFood onClick={Switch5} resizer={largura}>
+              <ImageButton src={Rdio} />
             </GetzFood>
 
-            <GetzFood onClick={() => onButtonClick(2)}>
+            <GetzFood onClick={Switch7} resizer={largura}>
               <ImageButton src={WhiteL}/>
              </GetzFood>
 
-            <GetzFood onClick={() => onButtonClick(3)}>
+            <GetzFood onClick={Switch4} resizer={largura}>
               <ImageButton src={Epedidos}/>
             </GetzFood>
 
-            <GetzFood onClick={() => onButtonClick(4)}>
+            <GetzFood onClick={Switch3} resizer={largura}>
               <ImageButton src={Getz}/>
             </GetzFood>
 
-            <GetzFood onClick={() => onButtonClick(5)}>
+            <GetzFood onClick={Switch2} resizer={largura}>
               <ImageButton src={Gestor}/>
             </GetzFood>
 
-            <GetzFood onClick={() => onButtonClick(6)}>
+            <GetzFood onClick={Switch6} resizer={largura}>
               <ImageButton src={Micro}/>
             </GetzFood>
 
-            <GetzFood onClick={() => onButtonClick(7)}>
+            <GetzFood onClick={Switch} resizer={largura}>
               <ImageButton src={Entrega}/>
             </GetzFood>
         </Header>
+        <Tracinho src={Tracinhoo} />
       </Teste>     
 
         <Screens>

@@ -18,29 +18,38 @@ export const Caroulsel = styled.div`
 
 export const Header = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   -webkit-box-align: center;
   transition: width 1s;
   transition-property: all;
-  overflow-x: scroll;
+  justify-content: center;
+  @media (max-width: 768px) {
+    width: 710px;
+  }
 `;
 
+interface PropsGetz {
+  resizer?: any
+}
 
-export const GetzFood = styled.button`
+export const GetzFood = styled.button<PropsGetz>`
   height: 200px;
-  width: 14%;
-  
+  /* width: 14%; */
+  ${(props) => props.resizer ||`width: 14%`}
+
   margin-left: 10px;
   border: none;
+  flex: 0 0 auto;
   
   background-color: white;
+
   @media (max-width: 768px) {
-  flex-grow: 2;
+  width: 256px;
+  height: 100%;
 }
 `;
-
-/*                       --------------------                      */
 
 export const Screens = styled.div`
   height: 55%; //1200
@@ -119,16 +128,34 @@ export const Dive = styled.div`
 }
 `;
 
-export const ImageButton = styled.img`
+interface PropsBtn {
+  Filtro?: boolean
+}
+
+export const ImageButton = styled.img<PropsBtn>`
   background: white;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  @media (max-width: 1300px) {
+    width: 90px;
+  }
 `;
 
 export const Teste = styled.div`
   width: 100vw;
+  overflow-x: hidden;
   @media (max-width: 768px) {
   margin-top: 20px;
+  margin-bottom: 70px;
+  height: 150px;
 }
+`;
+
+export const Tracinho = styled.img`
+  display: block;
+  margin: auto;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 

@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface MainProps {
+  active?: boolean;
+}
+
 export const Container = styled.div`
   height: 100vh;
   @media (max-width: 2000px){
@@ -193,7 +197,7 @@ export const CupImage = styled.img`
 
 export const Help = styled.a`
   width: 12.5rem;
-  z-index: 999;
+  z-index: 9999;
 
   color: #231F20;
   background: #FFFFFF;
@@ -216,4 +220,102 @@ export const Help = styled.a`
   transition: all 0.3s ease 0s;
 `;
 
-/* Body */
+export const Hamburguer = styled.div`
+  height: 50px;
+  width: 50px;
+  border: 1px white solid;
+  z-index: 1000;
+  position: fixed;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+export const Tesen = styled.div<MainProps>`
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  padding-left: 10px;
+  padding-top: 5px;
+  ${(props) => props.active && 'box-shadow: #FFFFFF 0px 0px 0px 130vh;'}
+`;
+
+interface MostrarProps {
+  mostrar?: boolean
+}
+
+export const Items = styled.div<MostrarProps>`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 200px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ${(props) => props.mostrar && 'display: none;'}
+`;
+
+export const Links = styled.a`
+  cursor: pointer;
+  padding-top: 20px;
+
+  font-size: 20px;
+  font-weight: 500;
+  
+  color: #eb3340;
+  -webkit-font-smoothing: antialiased;
+
+  margin-right: 25px;
+  margin-left: 25px;
+`;
+
+interface AnimeProps {
+  anime?: boolean
+  mudar?: boolean
+}
+
+export const Animations = styled.div<AnimeProps>`
+  width: 25px;
+  height: 2px;
+  background-color: #eb3340;
+  margin-top: 20px;
+  z-index: 1000;
+  transform-origin: center;
+  ${(props) => props.anime && `transform: rotateZ(45deg);`}
+  ${(props) => props.anime && `transition: all 0.5s ease-in-out 0s;`}
+  ::after{
+    ${(props) => props.mudar && `background: white`}
+    width: 25px;
+    bottom: 30px;
+    height: 2px;
+    background-color: #eb3340;
+    content: '';
+    position: absolute;
+    transition: all 0.5s ease-in-out 0s;
+    display: block;
+    ${(props) => props.anime && `transform: rotateZ(95deg);`}
+  }
+  
+
+
+  ::before{
+    ${(props) => props.mudar && `display: none`}
+    bottom: 11px;
+    height: 2px;
+    width: 25px;
+    background-color: #eb3340;
+    content: '';
+    position: absolute;
+    transition: all 0.5s ease-in-out 0s;
+    display: block;
+    ${(props) => props.anime && `transform: rotateZ(90deg);`}
+  }
+`;
