@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from "styled-components";
 
-export const EffectFrame = keyframes`
+const EffectFrame = keyframes`
   from {
     opacity: 0%;
   }
@@ -10,13 +10,18 @@ export const EffectFrame = keyframes`
 `;
 
 export const Caroulsel = styled.div`
-  width: 100%; 
+  width: 100%;
   height: 950px;
 
   margin-top: 50px;
 `;
 
-export const Header = styled.div`
+interface HeaderProps {
+  Rowl?: string | any;
+  ResizeRowl?: string | any;
+}
+
+export const Header = styled.div<HeaderProps>`
   width: 100%;
   height: 100%;
   display: flex;
@@ -25,33 +30,43 @@ export const Header = styled.div`
   transition: width 1s;
   transition-property: all;
   justify-content: center;
-  @media (max-width: 768px) {
-    width: 710px;
+  ${(props) => props.ResizeRowl || "translateX(calc(29%)) translateZ(0px)"};
+
+  @media (min-width: 769px) {
+    ${(props) => props.Rowl || "translateX(calc(29%)) translateZ(0px)"};
   }
 `;
 
 interface PropsGetz {
-  resizer?: any
+  resizer?: any;
 }
 
 export const GetzFood = styled.button<PropsGetz>`
   height: 200px;
   /* width: 14%; */
-  ${(props) => props.resizer ||`width: 14%`}
+  ${(props) => props.resizer || `width: 14%`}
 
   margin-left: 10px;
   border: none;
   flex: 0 0 auto;
-  
+
   background-color: white;
 
   @media (max-width: 768px) {
-  width: 256px;
-  height: 100%;
-}
+    width: 256px;
+    height: 100%;
+  }
 `;
 
-export const Screens = styled.div`
+const Animation = css`
+  animation: ${EffectFrame} 2s;
+`;
+
+interface ScreensProps {
+  windowEffect?: boolean;
+}
+
+export const Screens = styled.div<ScreensProps>`
   height: 55%; //1200
   width: 100vw;
 
@@ -62,8 +77,9 @@ export const Screens = styled.div`
   align-items: center;
   flex-direction: row-reverse;
   justify-content: space-around;
-  animation: ${EffectFrame} 2s;
-  @media (max-width: 768px){
+  ${(props) => (props.windowEffect ? Animation : "")}
+  @media (max-width: 768px) {
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: none;
@@ -73,8 +89,8 @@ export const Screens = styled.div`
 export const ScreenLayout = styled.div`
   width: 37.5rem;
   /* height: 100%; */
-  
-  @media (min-width: 769px){
+
+  @media (min-width: 769px) {
     display: flex;
     flex-direction: column;
   }
@@ -88,15 +104,15 @@ export const ScreenTitle = styled.h1`
 export const ScreenP = styled.p`
   font-weight: 400;
   font-size: 24px;
-  color: #979EAF;
+  color: #979eaf;
   margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 export const ScreenRed = styled.a`
   font-weight: 400;
   font-size: 24px;
-  margin-top: 20px;
-  color: #16355A;
+  color: #16355a;
 
   :hover {
     cursor: pointer;
@@ -107,37 +123,19 @@ export const ScreenImg = styled.img`
   max-width: 100%;
   height: 100%;
   @media (max-width: 768px) {
-  width: 200px;
+    width: 200px;
   }
 `;
 
 export const ScreenIcon = styled.img`
-  margin-top: 40px;
   height: 60px;
 `;
 
 export const Dive = styled.div`
-@media (max-width: 768px) {
-    display: block;
-    text-align: center;
-    width: 100%;
-    right: 50%;
-    transform: translateX(50%);
-    position: absolute;
-    bottom: -900px;
-}
-`;
-
-interface PropsBtn {
-  Filtro?: boolean
-}
-
-export const ImageButton = styled.img<PropsBtn>`
-  background: white;
-  max-width: 90%;
-  height: auto;
-  @media (max-width: 1300px) {
-    width: 90px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 
@@ -145,10 +143,10 @@ export const Teste = styled.div`
   width: 100vw;
   overflow-x: hidden;
   @media (max-width: 768px) {
-  margin-top: 20px;
-  margin-bottom: 70px;
-  height: 150px;
-}
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 150px;
+  }
 `;
 
 export const Tracinho = styled.img`
@@ -158,4 +156,3 @@ export const Tracinho = styled.img`
     display: none;
   }
 `;
-
