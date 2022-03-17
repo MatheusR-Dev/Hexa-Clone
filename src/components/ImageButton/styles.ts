@@ -6,13 +6,15 @@ export const Container = styled.div`
 
 interface ImageProps {
   GrayScale?: boolean;
+  Ativo?: boolean;
 }
 
 export const ImgButton = styled.img<ImageProps>`
   background: white;
   max-width: 90%;
   height: auto;
-  ${(props) => (props.GrayScale ? "filter: grayscale(1);" : "filter: none")}
+
+  ${(props) => (props.GrayScale ? "filter: none" : "filter: grayscale(1);")}
   @media (max-width: 1300px) {
     width: 90px;
   }

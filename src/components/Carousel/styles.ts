@@ -41,7 +41,7 @@ interface PropsGetz {
   resizer?: any;
 }
 
-export const GetzFood = styled.button<PropsGetz>`
+export const ContainerButton = styled.button<PropsGetz>`
   height: 200px;
   /* width: 14%; */
   ${(props) => props.resizer || `width: 14%`}
@@ -53,7 +53,7 @@ export const GetzFood = styled.button<PropsGetz>`
   background-color: white;
 
   @media (max-width: 768px) {
-    width: 256px;
+    width: 33.4%;
     height: 100%;
   }
 `;
@@ -89,6 +89,14 @@ export const Screens = styled.div<ScreensProps>`
 export const ScreenLayout = styled.div`
   width: 37.5rem;
   /* height: 100%; */
+
+  > div {
+    margin-top: 40px;
+    align-items: flex-start;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 
   @media (min-width: 769px) {
     display: flex;
@@ -127,19 +135,16 @@ export const ScreenImg = styled.img`
   }
 `;
 
-export const ScreenIcon = styled.img`
-  height: 60px;
-`;
-
-export const Dive = styled.div`
+export const IconContainer = styled.div`
+  display: none;
   @media (max-width: 768px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
 `;
 
-export const Teste = styled.div`
+export const Container = styled.div`
   width: 100vw;
   overflow-x: hidden;
   @media (max-width: 768px) {
