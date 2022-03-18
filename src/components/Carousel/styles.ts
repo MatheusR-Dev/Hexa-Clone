@@ -80,6 +80,8 @@ export const Screens = styled.div<ScreensProps>`
   ${(props) => (props.windowEffect ? Animation : "")}
   @media (max-width: 768px) {
     height: 80%;
+    width: 90vw;
+    margin:auto;
     display: flex;
     flex-direction: column;
     justify-content: none;
@@ -87,9 +89,10 @@ export const Screens = styled.div<ScreensProps>`
 `;
 
 export const ScreenLayout = styled.div`
-  width: 37.5rem;
+  @media (min-width: 770px) {
+    width: 37.5rem;
   /* height: 100%; */
-
+  }
   > div {
     margin-top: 40px;
     align-items: flex-start;
@@ -97,11 +100,7 @@ export const ScreenLayout = styled.div`
       display: none;
     }
   }
-
-  @media (min-width: 769px) {
-    display: flex;
-    flex-direction: column;
-  }
+  
 `;
 
 export const ScreenTitle = styled.h1`
@@ -128,8 +127,9 @@ export const ScreenRed = styled.a`
 `;
 
 export const ScreenImg = styled.img`
-  max-width: 100%;
+  max-width: 50%;
   height: 100%;
+  margin-right: 30px;
   @media (max-width: 768px) {
     width: 200px;
   }

@@ -54,8 +54,8 @@ export default function Carousel() {
     setImage(Data.GetzEntrega[0].Image);
     setText(Data.GetzEntrega[0].Text);
     setColor(`#1082FF`);
-    setChange({ transform: `translateX(calc(-44.5%)) translateZ(0px)` });
-    setResizeChange({ transform: `translateX(calc(-104%)) translateZ(0px)` });
+    setChange({ transform: `translateX(calc(14.5%)) translateZ(0px)` });
+    setResizeChange({ transform: `translateX(calc(35%)) translateZ(0px)` });
     setwEffect(true);
     setActive(true)
     setActive1(false)
@@ -113,8 +113,8 @@ export default function Carousel() {
     setImage(Data.EPedido[0].Image);
     setText(Data.EPedido[0].Text);
     setColor(`#F9B61B`);
-    setChange({ transform: `translateX(calc(14.5%)) translateZ(0px)` });
-    setResizeChange({ transform: `translateX(calc(35%)) translateZ(0px)` });
+    setChange({ transform: `translateX(calc(-29.5%)) translateZ(0px)` });
+    setResizeChange({ transform: `translateX(calc(-69%)) translateZ(0px)` });
     setwEffect(true);
     setActive3(true)
     setActive1(false)
@@ -132,8 +132,8 @@ export default function Carousel() {
     setText(Data.HexaRadio[0].Text);
     setColor(`#EB3340`);
     setIcon(false);
-    setChange({ transform: `translateX(calc(44%)) translateZ(0px)` });
-    setResizeChange({ transform: `translateX(calc(104%)) translateZ(0px)` });
+    setChange({ transform: `translateX(calc(-44.5%)) translateZ(0px)` });
+    setResizeChange({ transform: `translateX(calc(-104%)) translateZ(0px)` });
     setwEffect(true);
     setActive4(true)
     setActive1(false)
@@ -151,8 +151,8 @@ export default function Carousel() {
     setImage(Data.MicroBank[0].Image);
     setText(Data.MicroBank[0].Text);
     setColor(`#16355A`);
-    setChange({ transform: `translateX(calc(-29.5%)) translateZ(0px)` });
-    setResizeChange({ transform: `translateX(calc(-69%)) translateZ(0px)` });
+    setChange({ transform: `translateX(calc(44%)) translateZ(0px)` });
+    setResizeChange({ transform: `translateX(calc(104%)) translateZ(0px)` });
     setwEffect(true);
     setActive5(true)
     setActive1(false)
@@ -192,32 +192,32 @@ export default function Carousel() {
             ResizeRowl={{ transform: resizeChange.transform }}
             onMouseOut={() => setwEffect(false)}
           >
-            <ContainerButton onClick={Hexaradio} resizer={wSize}>
-              <ImageButton src={Data.HexaRadio[0].ImageIcon} GrayScale={active4}/>
+            <ContainerButton onClick={MicroBank} resizer={wSize}>
+              <ImageButton src={Data.MicroBank[0].ImageIcon} GrayScale={active5}/>
             </ContainerButton>
 
             <ContainerButton onClick={Whitelabel} resizer={wSize}>
               <ImageButton src={Data.Whitelabel[0].ImageIcon} GrayScale={active6}/>
             </ContainerButton>
 
-            <ContainerButton onClick={EPedido} resizer={wSize}>
-              <ImageButton src={Data.EPedido[0].ImageIcon} GrayScale={active3}/>
+            <ContainerButton onClick={GetzEntrega} resizer={wSize}>
+              <ImageButton src={Data.GetzEntrega[0].ImageIcon} GrayScale={active}/>
             </ContainerButton>
-
+            
             <ContainerButton onClick={GetzFood} resizer={wSize}>
               <ImageButton src={Data.GetzFood[0].ImageIcon} GrayScale={active2}/>
             </ContainerButton>
-
+            
             <ContainerButton onClick={GetzGestor} resizer={wSize}>
               <ImageButton src={Data.GetzGestor[0].ImageIcon} GrayScale={active1}/>
             </ContainerButton>
-
-            <ContainerButton onClick={MicroBank} resizer={wSize}>
-              <ImageButton src={Data.MicroBank[0].ImageIcon} GrayScale={active5}/>
+            
+            <ContainerButton onClick={EPedido} resizer={wSize}>
+              <ImageButton src={Data.EPedido[0].ImageIcon} GrayScale={active3}/>
             </ContainerButton>
-
-            <ContainerButton onClick={GetzEntrega} resizer={wSize}>
-              <ImageButton src={Data.GetzEntrega[0].ImageIcon} GrayScale={active}/>
+            
+            <ContainerButton onClick={Hexaradio} resizer={wSize}>
+              <ImageButton src={Data.HexaRadio[0].ImageIcon} GrayScale={active4}/>
             </ContainerButton>
           </Header>
           <Tracinho src={traco}/>

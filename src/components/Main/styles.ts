@@ -121,6 +121,15 @@ export const Box = styled.div`
   }
 `;
 
+export const Content = styled.div`
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
 export const Message = styled.h1`
   font-weight: bold;
   font-size: 120px;
@@ -130,12 +139,21 @@ export const Message = styled.h1`
   font-size: 110px;
   padding-bottom: 15%;
   }
+  @media (max-width: 700px) {
+    font-size: 90px;
+  }
+  @media (max-width: 600px) {
+    font-size: 80px;
+  }
+  @media (max-width: 500px) {
+    font-size: 60px;
+  }
 `;
 
 export const Soluctions = styled.a`
-  width: 50%;
-  padding: 23px 58px;
-  margin-right: 1rem;
+  width: 15.1rem;
+  padding: 25px 50px;
+  margin-right: 20px;
 
   color: #EB3340;
   border: solid #EB3340 2px;
@@ -147,13 +165,11 @@ export const Soluctions = styled.a`
   }
 
   @media (max-width: 768px) {
-  margin-left: 13rem;
+    margin: 0;
   }
 `;
 
 export const Join = styled.a`
-  width: 50%;
-  
   background: #EB3340;
   color: #FFFFFF;
   border-radius: 10px;
@@ -170,7 +186,6 @@ export const Join = styled.a`
   flex-direction: column;
   width: 15.1rem;
   margin-top: 2rem;
-  margin-left: 13rem;
   padding: 25px 50px;
   }
 `;
@@ -192,6 +207,13 @@ export const CupImage = styled.img`
   @media (max-width: 768px) {
   top: 4rem;
   left: 12rem;
+  }
+  @media (max-width: 600px) {
+  top: 4rem;
+  left: 4rem;
+  }
+  @media (max-width: 400px) {
+  width: 70%;
   }
 `;
 

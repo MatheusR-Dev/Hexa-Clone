@@ -31,7 +31,7 @@ export const Footer = styled.div`
 
   background-color: #F5F8FD;
   @media (max-width: 768px) {
-    
+  height: 55.5rem;
   }
 `;
 
@@ -63,6 +63,7 @@ export const Address = styled.p`
   text-align: right;
   @media (max-width: 768px) {
   text-align: center;
+  width: 80vw;
 }
 `;
 
@@ -80,10 +81,15 @@ export const About = styled.div`
   padding: 0 6rem 0 6rem;
   
   @media (max-width: 768px) {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
   text-align: center;
+
 }
+@media (max-width: 600px) {
+  padding: 0;
+  }
   
 `;
 
