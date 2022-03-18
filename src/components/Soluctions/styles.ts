@@ -78,7 +78,7 @@ export const About = styled.div`
 
   grid-template-columns: repeat(4, 1fr);
 
-  padding: 0 6rem 0 6rem;
+  padding: 0 7rem 0 7rem;
   
   @media (max-width: 768px) {
   grid-template-columns: 1fr;
