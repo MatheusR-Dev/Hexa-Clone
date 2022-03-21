@@ -20,8 +20,6 @@ import { ScreenIcon } from "../Icons/styles";
 export default function Carousel() {
   const [propr, setProps] = useState(Data[3]);
 
-  console.log(propr.wEffect);
-
   return (
     <>
       <Caroulsel>
