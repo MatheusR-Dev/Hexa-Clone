@@ -9,6 +9,15 @@ const EffectFrame = keyframes`
   }
 `;
 
+const EffectFrame2 = keyframes`
+  from {
+    opacity: 1%;
+  }
+  to {
+    opacity: 100%;
+  }
+`;
+
 export const Caroulsel = styled.div`
   width: 100%;
   height: 950px;
@@ -62,8 +71,13 @@ const Animation = css`
   animation: ${EffectFrame} 2s;
 `;
 
+const Animation2 = css`
+  animation: ${EffectFrame2} 2s;
+`;
+
 interface ScreensProps {
   windowEffect?: boolean;
+  efeito?: boolean;
 }
 
 export const Screens = styled.div<ScreensProps>`
@@ -78,10 +92,11 @@ export const Screens = styled.div<ScreensProps>`
   flex-direction: row-reverse;
   justify-content: space-around;
   ${(props) => (props.windowEffect ? Animation : "")}
+  ${(props) => (props.efeito ? Animation2 : "")}
   @media (max-width: 768px) {
     height: 80%;
     width: 90vw;
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: none;
@@ -91,7 +106,7 @@ export const Screens = styled.div<ScreensProps>`
 export const ScreenLayout = styled.div`
   @media (min-width: 770px) {
     width: 37.5rem;
-  /* height: 100%; */
+    /* height: 100%; */
   }
   > div {
     margin-top: 40px;
@@ -100,7 +115,6 @@ export const ScreenLayout = styled.div`
       display: none;
     }
   }
-  
 `;
 
 export const ScreenTitle = styled.h1`
