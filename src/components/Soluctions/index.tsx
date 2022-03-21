@@ -30,7 +30,7 @@ const Soluctions: React.FC = () => {
 
       <Footer>
         <ContactInfo>
-          <Logo src={LogoHexa} />
+          <Logo src={LogoHexa}/>
           <Address>
             © 2020 hexaLAB - HEXALAB SOLUCOES EM SOFTWARE LTDA | CNPJ
             245463243/9098-00 | Rua Teófilo David Muzel, 639, Vila Ophelia,

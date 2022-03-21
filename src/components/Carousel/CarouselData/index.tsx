@@ -8,7 +8,6 @@ import GFood from "../../../assets/getzfood.svg";
 import Gestor from "../../../assets/gestorgetz.svg";
 import Pedido from "../../../assets/getzpedido.svg";
 import Radio from "../../../assets/radio.svg";
-import NLogo from "../../../assets/newlogo.svg";
 import MicroLogo from "../../../assets/micrologo.svg";
 import GFoodLogo from "../../../assets/logogetz.svg";
 import GestorLogo from "../../../assets/gestor.svg";
@@ -25,91 +24,124 @@ import GestorTraco from "../../../assets/tracinhoGetzGestor.svg";
 import MBankTraco from "../../../assets/tracinhoMicroBank.svg";
 import Empty from "../../../assets/blank.svg"
 
+export const Data = [
+  {
+    Title: "Seu banco digital está pronto!",
+    Text: "Comece sua Fintech, sem grandes investimentos, sem burocracia e de forma super ágil.",
+    IconWeb: Empty, 
+    IconMac: Empty,
+    IconGPlay: Icon,
+    Image: Micro,
+    ImageIcon: MicroLogo,
+    Traco: MBankTraco,
+    Color: `#16355A`,
+    GrayScale: true,
+    Transform: `translateX(calc(44%)) translateZ(0px)`,
+    TransformRsz: `translateX(calc(104%)) translateZ(0px)`,
+    wEffect: true,
+    efeito: false,
+  },
+  {
+    Title: "Carteira whitelabel",
+    Text: "A carteira digital com a sua marca. Potencialize o seu negócio fidelizando seus clientes  oferecendo o melhor do bancos digitais.",
+    IconWeb: Icon, 
+    IconMac: Mac,
+    IconGPlay: GPlay,
+    Image: WhiteL,
+    ImageIcon: WhiteLogo,
+    Traco: WhiteLTraco,
+    Color: `#1082FF`,
+    GrayScale1: true,
+    Transform: `translateX(calc(29%)) translateZ(0px)`,
+    TransformRsz: `translateX(calc(69%)) translateZ(0px)`,
+    wEffect: false,
+    efeito: true,
+  },
+  {
+    Title: "Getz para entregadores",
+    Text: "Você que faz entregas e deseja ser um entregador Getz Food, baixe o app e venha fazer parte do Getz Entrega.",
+    IconWeb: Icon, 
+    IconMac: Mac,
+    IconGPlay: GPlay,
+    Image: Gentrega,
+    ImageIcon: GEntregaLogo,
+    Traco: GEntregaTraco,
+    Color: `#1082FF`,
+    GrayScale2: true,
+    Transform: `translateX(calc(14.5%)) translateZ(0px)`,
+    TransformRsz: `translateX(calc(35%)) translateZ(0px)` ,
+    wEffect: true,
+    efeito: false,
+  },
+  {
+    Title: "Paixão por delivery",
+    Text: "Peça seu delivery de comida de forma fácil e rápida! Também aproveite os melhores cupons e ganhe cashback em suas compras.",
+    IconWeb: Icon, 
+    IconMac: Mac,
+    IconGPlay: GPlay,
+    Image: GFood,
+    ImageIcon: GFoodLogo,
+    Traco: GFoodTraco,
+    Color: `#EB3340`,
+    GrayScale3: true,
+    Transform: `translateX(calc(100% - 100%)) translateZ(0px)`,
+    TransformRsz: `translateX(calc(100% - 100%)) translateZ(0px)`,
+    wEffect: false,
+    efeito: true,
+  },
+  {
+    Title: "Gerencie seu restaurante no Getz Food!",
+    Text: "Receba pedidos, gerencie sua loja, acompanhe seu desempenho e receba feedback de clientes!",
+    IconWeb: Empty, 
+    IconMac: Empty,
+    IconGPlay: Icon,
+    Image: Gestor,
+    ImageIcon: GestorLogo,
+    Traco: GestorTraco,
+    Color: `#7438FF`,
+    GrayScale4: true,
+    Transform: `translateX(calc(-15%)) translateZ(0px)`, 
+    TransformRsz: `translateX(calc(-35%)) translateZ(0px)`,
+    wEffect: true,
+    efeito: false,
+  },
+  {
+    Title: "Acompanhe a venda de representantes e prepostos.",
+    Text: "Potencialize suas vendas, acompanhe seus clientes. Ferramenta ideal para indústrias, varejo e distribuidoras.",
+    IconWeb: Empty, 
+    IconMac: Mac,
+    IconGPlay: GPlay,
+    Image: Pedido,
+    ImageIcon: EPLogo,
+    Traco: EPTraco,
+    Color: `#F9B61B`,
+    GrayScale5: true,
+    Transform: `translateX(calc(-29.5%)) translateZ(0px)`,
+    TransformRsz: `translateX(calc(-69%)) translateZ(0px)`,
+    efeito: true,
+    wEffect: false,
+  },
+  {
+    Tela: "HexaRadio",
+    Title: "Hexarádio, o player online para a sua rádio",
+    Text: "Com a hexarádio você tem o seu próprio player para transmitir sua rádio em todo lugar e para qualquer pessoa.",
+    IconWeb: Empty, 
+    IconMac: Empty,
+    IconGPlay: Empty,
+    Image: Radio,
+    ImageIcon: RadioLogo,
+    Traco: FMTraco,
+    Color: `#EB3340`,
+    GrayScale6: true,
+    Transform: `translateX(calc(-44.5%)) translateZ(0px)`,
+    TransformRsz: `translateX(calc(-104%)) translateZ(0px)`,
+    efeito: false,
+    wEffect: true,
+  },
+  {
+    Width: `calc(100% / 7)`
+  }
+]
 
-export const Data = {
-  MicroBank: [
-    {
-      Title: "Seu banco digital está pronto!",
-      Text: "Comece sua Fintech, sem grandes investimentos, sem burocracia e de forma super ágil.",
-      IconWeb: Icon, 
-      IconMac: Mac,
-      IconGPlay: GPlay,
-      Image: Micro,
-      ImageIcon: MicroLogo,
-      Blank: Empty,
-      Traco: MBankTraco,
-    },
-  ],
-
-  Whitelabel: [
-    {
-      Title: "Carteira whitelabel",
-      Text: "A carteira digital com a sua marca. Potencialize o seu negócio fidelizando seus clientes  oferecendo o melhor do bancos digitais.",
-      Icon: NLogo,
-      Image: WhiteL,
-      ImageIcon: WhiteLogo,
-      Blank: Empty,
-      Traco: WhiteLTraco,
-    },
-  ],
-
-  GetzEntrega: [
-    {
-      Title: "Getz para entregadores",
-      Text: "Você que faz entregas e deseja ser um entregador Getz Food, baixe o app e venha fazer parte do Getz Entrega.",
-      Icon: NLogo,
-      Image: Gentrega,
-      ImageIcon: GEntregaLogo,
-      Blank: Empty,
-      Traco: GEntregaTraco,
-    },
-  ],
-
-  GetzFood: [
-    {
-      Title: "Paixão por delivery",
-      Text: "Peça seu delivery de comida de forma fácil e rápida! Também aproveite os melhores cupons e ganhe cashback em suas compras.",
-      Icon: NLogo,
-      Image: GFood,
-      ImageIcon: GFoodLogo,
-      Blank: Empty,
-      Traco: GFoodTraco,
-    },
-  ],
-
-  GetzGestor: [
-    {
-      Title: "Gerencie seu restaurante no Getz Food!",
-      Text: "Receba pedidos, gerencie sua loja, acompanhe seu desempenho e receba feedback de clientes!",
-      Icon: Icon,
-      Image: Gestor,
-      ImageIcon: GestorLogo,
-      Blank: Empty,
-      Traco: GestorTraco,
-    },
-  ],
-  EPedido: [
-    {
-      Title: "Acompanhe a venda de representantes e prepostos.",
-      Text: "Potencialize suas vendas, acompanhe seus clientes. Ferramenta ideal para indústrias, varejo e distribuidoras.",
-      Icon: NLogo,
-      Image: Pedido,
-      ImageIcon: EPLogo,
-      Blank: Empty,
-      Traco: EPTraco,
-    },
-  ],
-  HexaRadio: [
-    {
-      Tela: "HexaRadio",
-      Title: "Hexarádio, o player online para a sua rádio",
-      Text: "Com a hexarádio você tem o seu próprio player para transmitir sua rádio em todo lugar e para qualquer pessoa.",
-      Image: Radio,
-      ImageIcon: RadioLogo,
-      Blank: Empty,
-      Traco: FMTraco,
-    },
-  ],
-};
 
 

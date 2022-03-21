@@ -24,28 +24,23 @@ import Logo from "../../assets/logo.svg";
 import ImgCup from "../../assets/cup.svg";
 import { useState } from "react";
 
-interface MainProps {
-  active?: boolean;
-  mostrar?: boolean;
-}
-
-const Main: React.FC<MainProps> = () => {
+const Main: React.FC = () => {
   const [playAnimation, setPlayAnimation] = useState(false);
   const [hiddenList, setHiddenList] = useState(true);
-  const [anime, setAnime] = useState(false);
-  const [mudar, setMudar] = useState(false);
+  const [animate, setAnimate] = useState(false);
+  const [change, setChange] = useState(false);
 
   function handleAnimation() {
     if (playAnimation === false && hiddenList === true) {
       setPlayAnimation(true);
       setHiddenList(false);
-      setAnime(true);
-      setMudar(true);
+      setAnimate(true);
+      setChange(true);
     } else {
       setPlayAnimation(false);
       setHiddenList(true);
-      setAnime(false);
-      setMudar(false);
+      setAnimate(false);
+      setChange(false);
     }
   }
 
@@ -53,9 +48,9 @@ const Main: React.FC<MainProps> = () => {
     <Container>
       <Hamburguer>
         <Tesen active={playAnimation} onClick={handleAnimation}>
-          <Animations anime={anime} mudar={mudar}></Animations>
+          <Animations animate={animate} change={change}></Animations>
         </Tesen>
-        <Items mostrar={hiddenList}>
+        <Items show={hiddenList}>
           <Links>Home</Links>
           <Links>Sobre Nós</Links>
           <Links>Contato</Links>

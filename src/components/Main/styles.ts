@@ -268,7 +268,7 @@ export const Tesen = styled.div<MainProps>`
 `;
 
 interface MostrarProps {
-  mostrar?: boolean
+  show?: boolean
 }
 
 export const Items = styled.div<MostrarProps>`
@@ -282,7 +282,7 @@ export const Items = styled.div<MostrarProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${(props) => props.mostrar && 'display: none;'}
+  ${(props) => props.show && 'display: none;'}
 `;
 
 export const Links = styled.a`
@@ -300,8 +300,8 @@ export const Links = styled.a`
 `;
 
 interface AnimeProps {
-  anime?: boolean
-  mudar?: boolean
+  animate?: boolean
+  change?: boolean
 }
 
 export const Animations = styled.div<AnimeProps>`
@@ -311,10 +311,10 @@ export const Animations = styled.div<AnimeProps>`
   margin-top: 20px;
   z-index: 1000;
   transform-origin: center;
-  ${(props) => props.anime && `transform: rotateZ(45deg);`}
-  ${(props) => props.anime && `transition: all 0.5s ease-in-out 0s;`}
+  ${(props) => props.animate && `transform: rotateZ(45deg);`}
+  ${(props) => props.animate && `transition: all 0.5s ease-in-out 0s;`}
   ::after{
-    ${(props) => props.mudar && `background: white`}
+    ${(props) => props.change && `background: white`}
     width: 25px;
     bottom: 30px;
     height: 2px;
@@ -323,13 +323,13 @@ export const Animations = styled.div<AnimeProps>`
     position: absolute;
     transition: all 0.5s ease-in-out 0s;
     display: block;
-    ${(props) => props.anime && `transform: rotateZ(95deg);`}
+    ${(props) => props.animate && `transform: rotateZ(95deg);`}
   }
   
 
 
   ::before{
-    ${(props) => props.mudar && `display: none`}
+    ${(props) => props.change && `display: none`}
     bottom: 11px;
     height: 2px;
     width: 25px;
@@ -338,6 +338,6 @@ export const Animations = styled.div<AnimeProps>`
     position: absolute;
     transition: all 0.5s ease-in-out 0s;
     display: block;
-    ${(props) => props.anime && `transform: rotateZ(90deg);`}
+    ${(props) => props.animate && `transform: rotateZ(90deg);`}
   }
 `;
