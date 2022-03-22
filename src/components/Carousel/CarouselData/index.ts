@@ -39,7 +39,7 @@ export const Data = [
     Transform: `translateX(calc(44%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(104%)) translateZ(0px)`,
     wEffect: true,
-    efeito: false,
+    efeito: true,
   },
   {
     Title: "Carteira whitelabel",
@@ -54,7 +54,7 @@ export const Data = [
     GrayScale1: true,
     Transform: `translateX(calc(29%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(69%)) translateZ(0px)`,
-    wEffect: false,
+    wEffect: true,
     efeito: true,
   },
   {
@@ -71,7 +71,7 @@ export const Data = [
     Transform: `translateX(calc(14.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(35%)) translateZ(0px)` ,
     wEffect: true,
-    efeito: false,
+    efeito: true,
   },
   {
     Title: "Paixão por delivery",
@@ -86,7 +86,7 @@ export const Data = [
     GrayScale3: true,
     Transform: `translateX(calc(100% - 100%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(100% - 100%)) translateZ(0px)`,
-    wEffect: false,
+    wEffect: true,
     efeito: true,
   },
   {
@@ -103,7 +103,7 @@ export const Data = [
     Transform: `translateX(calc(-15%)) translateZ(0px)`, 
     TransformRsz: `translateX(calc(-35%)) translateZ(0px)`,
     wEffect: true,
-    efeito: false,
+    efeito: true,
   },
   {
     Title: "Acompanhe a venda de representantes e prepostos.",
@@ -119,10 +119,9 @@ export const Data = [
     Transform: `translateX(calc(-29.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(-69%)) translateZ(0px)`,
     efeito: true,
-    wEffect: false,
+    wEffect: true,
   },
   {
-    Tela: "HexaRadio",
     Title: "Hexarádio, o player online para a sua rádio",
     Text: "Com a hexarádio você tem o seu próprio player para transmitir sua rádio em todo lugar e para qualquer pessoa.",
     IconWeb: Empty, 
@@ -135,12 +134,9 @@ export const Data = [
     GrayScale6: true,
     Transform: `translateX(calc(-44.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(-104%)) translateZ(0px)`,
-    efeito: false,
+    efeito: true,
     wEffect: true,
   },
-  {
-    Width: `calc(100% / 7)`
-  }
 ]
 
 

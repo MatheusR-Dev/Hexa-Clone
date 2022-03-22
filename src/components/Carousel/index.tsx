@@ -16,92 +16,50 @@ import {
 import { Data } from "./CarouselData";
 import ImageButton from "../ImageButton";
 import { ScreenIcon } from "../Icons/styles";
+import { useEffect } from "react";
+
+
 
 export default function Carousel() {
   const [propr, setProps] = useState(Data[3]);
+  const [itemIndex, setItemIndex] = useState(3);
+  const [itemEffect, setItemEffect] = useState(false);
+  
+  useEffect(() => {
+  setItemEffect(true)
+  setTimeout(() => {
+  setItemEffect(false)
+  }, 500)
+  }, [itemIndex])
 
   return (
     <>
       <Caroulsel>
         <Container>
           <Header
-            Rowl={{ transform: propr.Transform }}
-            ResizeRowl={{ transform: propr.TransformRsz }}
-          >
+          Rowl={{ transform: propr.Transform }}
+          ResizeRowl={{ transform: propr.TransformRsz }}
+        >
+          {Data.map((datas, index) => (
             <ContainerButton
-              onClick={() => setProps(Data[0])}
-              resizer={{ width: Data[7].Width }}
+              onClick={() => {
+              setProps(datas);
+              setItemIndex(index);
+              }}
+              disabled={itemEffect}
             >
               <ImageButton
-                src={Data[0].ImageIcon}
-                GrayScale={propr.GrayScale}
+                src={datas.ImageIcon}
+                GrayScale={itemIndex === index}
               />
             </ContainerButton>
-
-            <ContainerButton
-              onClick={() => setProps(Data[1])}
-              resizer={{ width: Data[7].Width }}
-            >
-              <ImageButton
-                src={Data[1].ImageIcon}
-                GrayScale={propr.GrayScale1}
-              />
-            </ContainerButton>
-
-            <ContainerButton
-              onClick={() => setProps(Data[2])}
-              resizer={{ width: Data[7].Width }}
-            >
-              <ImageButton
-                src={Data[2].ImageIcon}
-                GrayScale={propr.GrayScale2}
-              />
-            </ContainerButton>
-
-            <ContainerButton
-              onClick={() => setProps(Data[3])}
-              resizer={{ width: Data[7].Width }}
-            >
-              <ImageButton
-                src={Data[3].ImageIcon}
-                GrayScale={propr.GrayScale3}
-              />
-            </ContainerButton>
-
-            <ContainerButton
-              onClick={() => setProps(Data[4])}
-              resizer={{ width: Data[7].Width }}
-            >
-              <ImageButton
-                src={Data[4].ImageIcon}
-                GrayScale={propr.GrayScale4}
-              />
-            </ContainerButton>
-
-            <ContainerButton
-              onClick={() => setProps(Data[5])}
-              resizer={{ width: Data[7].Width }}
-            >
-              <ImageButton
-                src={Data[5].ImageIcon}
-                GrayScale={propr.GrayScale5}
-              />
-            </ContainerButton>
-
-            <ContainerButton
-              onClick={() => setProps(Data[6])}
-              resizer={{ width: Data[7].Width }}
-            >
-              <ImageButton
-                src={Data[6].ImageIcon}
-                GrayScale={propr.GrayScale6}
-              />
-            </ContainerButton>
+          ))}
+          
           </Header>
           <Tracinho src={propr.Traco} />
         </Container>
 
-        <Screens windowEffect={propr.wEffect} efeito={propr.efeito}>
+        <Screens windowEffect={itemEffect}>
           <ScreenLayout>
             <ScreenTitle>{propr.Title}</ScreenTitle>
             <ScreenP>{propr.Text}</ScreenP>

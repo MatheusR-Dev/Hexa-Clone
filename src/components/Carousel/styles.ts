@@ -34,6 +34,7 @@ export const Header = styled.div<HeaderProps>`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   -webkit-box-align: center;
   transition: width 1s;
@@ -52,8 +53,7 @@ interface PropsGetz {
 
 export const ContainerButton = styled.button<PropsGetz>`
   height: 200px;
-  /* width: 14%; */
-  ${(props) => props.resizer || `width: 14%`}
+  width: calc(100% / 7);
 
   margin-left: 10px;
   border: none;
