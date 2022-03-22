@@ -9,15 +9,6 @@ const EffectFrame = keyframes`
   }
 `;
 
-const EffectFrame2 = keyframes`
-  from {
-    opacity: 1%;
-  }
-  to {
-    opacity: 100%;
-  }
-`;
-
 export const Caroulsel = styled.div`
   width: 100%;
   height: 950px;
@@ -71,13 +62,8 @@ const Animation = css`
   animation: ${EffectFrame} 2s;
 `;
 
-const Animation2 = css`
-  animation: ${EffectFrame2} 2s;
-`;
-
 interface ScreensProps {
   windowEffect?: boolean;
-  efeito?: boolean;
 }
 
 export const Screens = styled.div<ScreensProps>`
@@ -92,7 +78,6 @@ export const Screens = styled.div<ScreensProps>`
   flex-direction: row-reverse;
   justify-content: space-around;
   ${(props) => (props.windowEffect ? Animation : "")}
-  ${(props) => (props.efeito ? Animation2 : "")}
   @media (max-width: 768px) {
     height: 80%;
     width: 90vw;

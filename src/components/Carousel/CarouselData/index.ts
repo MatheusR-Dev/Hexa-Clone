@@ -39,7 +39,6 @@ export const Data = [
     Transform: `translateX(calc(44%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(104%)) translateZ(0px)`,
     wEffect: true,
-    efeito: true,
   },
   {
     Title: "Carteira whitelabel",
@@ -55,7 +54,6 @@ export const Data = [
     Transform: `translateX(calc(29%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(69%)) translateZ(0px)`,
     wEffect: true,
-    efeito: true,
   },
   {
     Title: "Getz para entregadores",
@@ -71,7 +69,6 @@ export const Data = [
     Transform: `translateX(calc(14.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(35%)) translateZ(0px)` ,
     wEffect: true,
-    efeito: true,
   },
   {
     Title: "Paixão por delivery",
@@ -87,7 +84,6 @@ export const Data = [
     Transform: `translateX(calc(100% - 100%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(100% - 100%)) translateZ(0px)`,
     wEffect: true,
-    efeito: true,
   },
   {
     Title: "Gerencie seu restaurante no Getz Food!",
@@ -103,7 +99,6 @@ export const Data = [
     Transform: `translateX(calc(-15%)) translateZ(0px)`, 
     TransformRsz: `translateX(calc(-35%)) translateZ(0px)`,
     wEffect: true,
-    efeito: true,
   },
   {
     Title: "Acompanhe a venda de representantes e prepostos.",
@@ -118,7 +113,6 @@ export const Data = [
     GrayScale5: true,
     Transform: `translateX(calc(-29.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(-69%)) translateZ(0px)`,
-    efeito: true,
     wEffect: true,
   },
   {
@@ -134,10 +128,6 @@ export const Data = [
     GrayScale6: true,
     Transform: `translateX(calc(-44.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(-104%)) translateZ(0px)`,
-    efeito: true,
     wEffect: true,
   },
 ]
-
-
-
