@@ -1,11 +1,15 @@
 import React from 'react';
-
 import { Container, ScreenIcon } from './styles';
 
-const Icons: React.FC = () => {
+interface Props {
+  hidden?: string | undefined | any
+  src?: string | undefined
+}
+
+const Icons = ({hidden, src} : Props) => {
   return(
     <Container>
-        <ScreenIcon/>
+        <ScreenIcon src={src} hidden={hidden}/>
     </Container>
   )
 }

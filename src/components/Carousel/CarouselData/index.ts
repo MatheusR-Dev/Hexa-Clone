@@ -22,15 +22,15 @@ import EPTraco from "../../../assets/tracinhoEPedido.svg";
 import GEntregaTraco from "../../../assets/tracinhoGetzEntrega.svg";
 import GestorTraco from "../../../assets/tracinhoGetzGestor.svg";
 import MBankTraco from "../../../assets/tracinhoMicroBank.svg";
-import Empty from "../../../assets/blank.svg"
+
 
 export const Data = [
   {
     Title: "Seu banco digital está pronto!",
     Text: "Comece sua Fintech, sem grandes investimentos, sem burocracia e de forma super ágil.",
-    IconWeb: Empty, 
-    IconMac: Empty,
-    IconGPlay: Icon,
+    IconWeb: Icon, 
+    IconMac: Mac,
+    IconGPlay: GPlay,
     Image: Micro,
     ImageIcon: MicroLogo,
     Traco: MBankTraco,
@@ -39,6 +39,9 @@ export const Data = [
     Transform: `translateX(calc(44%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(104%)) translateZ(0px)`,
     wEffect: true,
+    Hidden: false,
+    Hidden1: true,
+    Hidden2: true,
   },
   {
     Title: "Carteira whitelabel",
@@ -54,6 +57,9 @@ export const Data = [
     Transform: `translateX(calc(29%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(69%)) translateZ(0px)`,
     wEffect: true,
+    Hidden: false,
+    Hidden1: false,
+    Hidden2: false,
   },
   {
     Title: "Getz para entregadores",
@@ -69,6 +75,9 @@ export const Data = [
     Transform: `translateX(calc(14.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(35%)) translateZ(0px)` ,
     wEffect: true,
+    Hidden: false,
+    Hidden1: false,
+    Hidden2: false,
   },
   {
     Title: "Paixão por delivery",
@@ -84,13 +93,16 @@ export const Data = [
     Transform: `translateX(calc(100% - 100%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(100% - 100%)) translateZ(0px)`,
     wEffect: true,
+    Hidden: false,
+    Hidden1: false,
+    Hidden2: false,
   },
   {
     Title: "Gerencie seu restaurante no Getz Food!",
     Text: "Receba pedidos, gerencie sua loja, acompanhe seu desempenho e receba feedback de clientes!",
-    IconWeb: Empty, 
-    IconMac: Empty,
-    IconGPlay: Icon,
+    IconWeb: Icon, 
+    IconMac: Mac,
+    IconGPlay: GPlay,
     Image: Gestor,
     ImageIcon: GestorLogo,
     Traco: GestorTraco,
@@ -99,11 +111,14 @@ export const Data = [
     Transform: `translateX(calc(-15%)) translateZ(0px)`, 
     TransformRsz: `translateX(calc(-35%)) translateZ(0px)`,
     wEffect: true,
+    Hidden: false,
+    Hidden1: true,
+    Hidden2: true,
   },
   {
     Title: "Acompanhe a venda de representantes e prepostos.",
     Text: "Potencialize suas vendas, acompanhe seus clientes. Ferramenta ideal para indústrias, varejo e distribuidoras.",
-    IconWeb: Empty, 
+    IconWeb: Icon, 
     IconMac: Mac,
     IconGPlay: GPlay,
     Image: Pedido,
@@ -114,13 +129,16 @@ export const Data = [
     Transform: `translateX(calc(-29.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(-69%)) translateZ(0px)`,
     wEffect: true,
+    Hidden: true,
+    Hidden1: false,
+    Hidden2: false,
   },
   {
     Title: "Hexarádio, o player online para a sua rádio",
     Text: "Com a hexarádio você tem o seu próprio player para transmitir sua rádio em todo lugar e para qualquer pessoa.",
-    IconWeb: Empty, 
-    IconMac: Empty,
-    IconGPlay: Empty,
+    IconWeb: Icon, 
+    IconMac: Mac,
+    IconGPlay: GPlay,
     Image: Radio,
     ImageIcon: RadioLogo,
     Traco: FMTraco,
@@ -129,5 +147,8 @@ export const Data = [
     Transform: `translateX(calc(-44.5%)) translateZ(0px)`,
     TransformRsz: `translateX(calc(-104%)) translateZ(0px)`,
     wEffect: true,
+    Hidden: true,
+    Hidden1: true,
+    Hidden2: true,
   },
 ]

@@ -96,6 +96,7 @@ export const ScreenLayout = styled.div`
   > div {
     margin-top: 40px;
     align-items: flex-start;
+    height: 64px;
     @media (max-width: 768px) {
       display: none;
     }

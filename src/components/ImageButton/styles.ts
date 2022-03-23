@@ -6,7 +6,6 @@ export const Container = styled.div`
 
 interface ImageProps {
   GrayScale?: boolean;
-  Ativo?: boolean;
 }
 
 export const ImgButton = styled.img<ImageProps>`

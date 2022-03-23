@@ -1,14 +1,20 @@
 import styled from 'styled-components';
 
+interface Props {
+  hidden?: boolean
+}
+
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+  display: inline;
 `;
 
-export const ScreenIcon = styled.img`
+export const ScreenIcon = styled.img<Props>`
   height: 60px;
   width: 60px;
   cursor: pointer;
+  display: ${(props) => (props.hidden ? 'none' : 'inline-block')};
   :hover {
     background-color: #E5ECF8;
     z-index: 999;

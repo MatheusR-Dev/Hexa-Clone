@@ -15,10 +15,8 @@ import {
 } from "./styles";
 import { Data } from "./CarouselData";
 import ImageButton from "../ImageButton";
-import { ScreenIcon } from "../Icons/styles";
+import Icons  from "../Icons/index";
 import { useEffect } from "react";
-
-
 
 export default function Carousel() {
   const [propr, setProps] = useState(Data[3]);
@@ -67,17 +65,17 @@ export default function Carousel() {
               Entrar em contato
             </ScreenRed>
             <div>
-              <ScreenIcon src={propr.IconGPlay} />
-              <ScreenIcon src={propr.IconMac} />
-              <ScreenIcon src={propr.IconWeb} />
+              <Icons src={propr.IconGPlay} hidden={propr.Hidden2}/>
+              <Icons src={propr.IconMac} hidden={propr.Hidden1}/>
+              <Icons src={propr.IconWeb} hidden={propr.Hidden}/>
             </div>
           </ScreenLayout>
           <ScreenImg src={propr.Image} />
           <IconContainer>
-            <ScreenIcon src={propr.IconGPlay} />
-            <ScreenIcon src={propr.IconMac} />
-            <ScreenIcon src={propr.IconWeb} />
-          </IconContainer>
+            <Icons src={propr.IconGPlay} hidden={propr.Hidden2}/>
+            <Icons src={propr.IconMac} hidden={propr.Hidden1}/>
+            <Icons src={propr.IconWeb} hidden={propr.Hidden}/>
+           </IconContainer>
         </Screens>
       </Caroulsel>
     </>
