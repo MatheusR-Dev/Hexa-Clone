@@ -104,7 +104,9 @@ export const List = styled.ul`
   list-style: none;
 `;
 
-export const Itens = styled.li``;
+export const Itens = styled.li`
+margin-bottom: 8px;
+`;
 
 export const Item = styled.a`
   font-weight: 200;

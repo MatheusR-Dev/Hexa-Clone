@@ -233,7 +233,7 @@ export const Help = styled.a`
 
   cursor: pointer;
 
-  padding: 1.5rem 2.2rem;
+  padding: 1.5rem 2.1rem;
   position: fixed;
 
   right: 5%;

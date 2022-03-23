@@ -50,7 +50,7 @@ export const ContainerButton = styled.button<PropsGetz>`
   border: none;
   flex: 0 0 auto;
 
-  background-color: white;
+  background-color: #FFF;
 
   @media (max-width: 768px) {
     width: 33.4%;
@@ -71,8 +71,6 @@ export const Screens = styled.div<ScreensProps>`
   width: 100vw;
 
   display: flex;
-
-  /* background-color: #F5F8FD; */
 
   align-items: center;
   flex-direction: row-reverse;
@@ -111,7 +109,7 @@ export const ScreenTitle = styled.h1`
 export const ScreenP = styled.p`
   font-weight: 400;
   font-size: 24px;
-  color: #979eaf;
+  color: #979EAF;
   margin-top: 20px;
   margin-bottom: 20px;
 `;
@@ -119,7 +117,7 @@ export const ScreenP = styled.p`
 export const ScreenRed = styled.a`
   font-weight: 400;
   font-size: 24px;
-  color: #16355a;
+  color: #16355A;
 
   :hover {
     cursor: pointer;
