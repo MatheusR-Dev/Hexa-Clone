@@ -9,6 +9,7 @@ interface MainProps {
 }
 
 const Layout: React.FC<MainProps> = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <Container>

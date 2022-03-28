@@ -1,25 +1,10 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
-  width: 100%;
-  height: 1200px;
 `;
 
-export const TextBox = styled.h1`
-  text-align: center;
-  font-weight: 600;
-  font-size: 48px;
-  margin-bottom: 20px;
-`;
-
-export const SubTextBox = styled.p`
-  text-align: center;
-  font-weight: 400;
-  font-size: 28px;
-  color: #979EAF;
-`;
-
-export const Footer = styled.div`
+export const Foooter = styled.div`
   width: 100%;
   height: 35.5rem;
   
@@ -118,6 +103,17 @@ export const Item = styled.a`
   }
 `;
 
+export const StyledLink = styled(Link)`
+  font-weight: 200;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  :hover{
+  cursor: pointer;
+  text-decoration: underline;
+  }
+`;
+
 export const Column = styled.div`
   width: 100%;
   height: 200px;
@@ -138,7 +134,7 @@ export const Content = styled.div`
 
 export const Div = styled.div`
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: white;
   display: flex;
   justify-content: center;

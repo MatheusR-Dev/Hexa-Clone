@@ -1,34 +1,11 @@
 import React from "react";
-import Carousel from "../Carousel";
-import {
-  Container,
-  ContactInfo,
-  Footer,
-  SubTextBox,
-  TextBox,
-  Address,
-  Logo,
-  About,
-  SubTitle,
-  Itens,
-  Column,
-  Content,
-  List,
-  Item,
-  Div,
-  Texte,
-} from "./styles";
 import LogoHexa from "../../assets/logohexa.svg";
+import { Container, Foooter, ContactInfo, Logo, About, Item, Address, Column, Content, Div, Itens, List, SubTitle, Texte, StyledLink } from "./styles";
 
-const Soluctions: React.FC = () => {
+const Footer: React.FC= () => {
   return (
     <Container>
-      <TextBox>Nossas soluções.</TextBox>
-      <SubTextBox>Conheça o que a Hexalab já desenvolveu.</SubTextBox>
-
-      <Carousel />
-
-      <Footer>
+      <Foooter>
         <ContactInfo>
           <Logo src={LogoHexa}/>
           <Address>
@@ -75,7 +52,7 @@ const Soluctions: React.FC = () => {
                 </Itens>
 
                 <Itens>
-                  <Item>Vagas</Item>
+                  <StyledLink to="/vagas">Vagas</StyledLink>
                 </Itens>
 
                 <Itens>
@@ -102,7 +79,7 @@ const Soluctions: React.FC = () => {
             </Content>
           </Column>
         </About>
-      </Footer>
+      </Foooter>
       <Div>
         <Texte>© 2020 hexaLAB</Texte>
       </Div>
@@ -110,4 +87,4 @@ const Soluctions: React.FC = () => {
   );
 };
 
-export default Soluctions;
+export default Footer;

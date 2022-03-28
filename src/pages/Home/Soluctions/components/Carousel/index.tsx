@@ -13,9 +13,9 @@ import {
   Container,
   Tracinho,
 } from "./styles";
-import { Data } from "./CarouselData";
-import ImageButton from "../ImageButton";
-import Icons  from "../Icons/index";
+import { Data } from "../CarouselData";
+import ImageButton from "../../../../../components/ImageButton";
+import Icons  from "../../../../../components/Icons/index";
 import { useEffect } from "react";
 
 export default function Carousel() {
@@ -40,6 +40,7 @@ export default function Carousel() {
         >
           {Data.map((datas, index) => (
             <ContainerButton
+              key={index}
               onClick={() => {
               setProps(datas);
               setItemIndex(index);
