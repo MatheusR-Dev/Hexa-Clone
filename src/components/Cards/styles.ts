@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 30%;
-  max-width: 258px;
+  width: 232px;
   height: 45%;
+  height: 296px;
   background: #FFF;
   
-  padding: 3% 3% 3% 3%;
+  padding: 3% 2% 3% 3%;
 
   /* border: 2px solid red; */
   border-radius: 14px;
@@ -26,7 +26,7 @@ export const Vaga = styled.p`
 `;
 
 export const CardIcon = styled.img`
-  margin-top: 18%;
+  margin-top: 25%;
   width: 50px;
   height: 50px;
 `;
@@ -44,7 +44,7 @@ export const CardBtn = styled.button`
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
   }
 
-  margin-top: 10%;
+  margin-top: 20%;
   color: #EB3340;
   background: #FFF;
 

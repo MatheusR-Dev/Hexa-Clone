@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Header from "../../components/Header";
-import Cards from "../../components/Cards"
-import Footer from "../../components/Footer"
+import Cards from "../../components/Cards";
+import Footer from "../../components/Footer";
+import Popupe from "../../components/Popup";
+import HelpButton from "../../components/HelpButton";
 import { VagasData } from "./VagasData";
+import { UserContext } from "../../contexts/UserContext";
 
 import {
   Container,
@@ -12,17 +15,43 @@ import {
   Message,
   Title,
 } from "./styles";
-import Popupe from "../../components/Popup";
-import HelpButton from "../../components/HelpButton";
+import { useEffect } from "react";
+import { api } from "../../services/api";
 
-const Vagas: React.FC = () => {
+interface Props {
+  id?: number
+  vaga?: string
+  description?: string
+}
+
+const Vagas = ( ) => {
   window.scrollTo(0, 0);
-  const [ openVagas, setOpenVagas ] = useState(false);
+  const { isOpenModal, setIsOpenModal } = useContext(UserContext)
+  const { selectedId, setSelectedId } = useContext(UserContext)
+  const [ newVaga, setNewVaga ] = useState<Props[]>([])
+
+  useEffect(() => {
+  api.get<Props[]>(`vagas/?id=${selectedId}`).then(response => {
+  setNewVaga(response.data)
+  })
+  }, [selectedId])
 
   return (
     <Container>
-      <Header />
-      <Popupe Hidden={openVagas} Open={() => setOpenVagas(false)}/>
+      <Header/>
+      {newVaga.map((data) => (
+      <Popupe 
+      key={data.id}
+      Hidden={isOpenModal} 
+      TVaga={data.vaga}
+      Description={data.description}
+      Open={() =>  {
+        setIsOpenModal(false)
+        console.log(selectedId)}}
+      />
+      ))}
+      
+
       <Main>
         <Content>
           <Title>ENTRE PARA O TIME!</Title>
@@ -31,7 +60,14 @@ const Vagas: React.FC = () => {
           </Message>
           <Dive>
           {VagasData.map((vagas) => (
-            <Cards src={vagas.Icon} Texto={vagas.Text} onClick={() => setOpenVagas(!false)}/>
+            <Cards 
+            src={vagas.Icon} 
+            Texto={vagas.Text} 
+            onClick={() => {
+          setIsOpenModal(!false)
+          setSelectedId(vagas.IdVagas)
+          console.log(selectedId)
+          }}/>
           ))}
           </Dive>
         </Content>

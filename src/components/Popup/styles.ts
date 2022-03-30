@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface Props {
-  esconder?: boolean
+  Hidden?: boolean
 }
 
 export const Container = styled.div<Props>`
@@ -13,16 +13,21 @@ export const Container = styled.div<Props>`
   z-index: 1000;
   overflow: hidden;
 
-  display: ${(props) => (props.esconder ? 'flex' : 'none' )};
+  display: ${(props) => (props.Hidden ? 'flex' : 'none' )};
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
 export const PopDiv = styled.div`
-  width: 35%;
   height: 95%;
-
+  width: 40vw;
+  overflow-y: scroll;
+  @media (max-width: 768px) {
+    width: 80vw;
+    padding: 8%;
+  }
+  
   padding: 4%;
   z-index: 1000;
 
@@ -83,6 +88,7 @@ export const Require = styled.ul`
 
 export const ReqItems = styled.li`
   margin: 0 40px;
+  margin-bottom: 15px;
   line-height: 24px;
 `;
 

@@ -1,0 +1,66 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "vaga": "Desenvolvedor BackEnd Júnior",
+      "description": "Desenvolver API's, modelar e implementar banco de dados.",
+      "atividades": [
+        "Mapear processos, riscos e controles de processos de negócios e sistemas;",
+        "Apoiar as áreas de negócios com a construção e manutenção de documentos normativos;",
+        "Avaliar o ambiente de controles em sintonia com as iniciativas de prevenção a fraudes;",
+        "Apoiar na execução de risk assessment corporativo;",
+        "Formalizar relatórios para os projetos desenvolvidos."
+      ],
+      "requisitos": [
+        "Cursar graduação ou técnico em áreas afins;",
+        "Boa comunicação, organização, criatividade e trabalho em equipe;",
+        "Disponibilidade para estagiar presencialmente em Itapeva/SP"
+      ]
+    },
+    {
+      "id": 2,
+      "vaga": "UI Designer",
+      "description": "Auxiliar na criação de Wireframes e Protótipos de interfaces web e mobile",
+      "atividades": [
+        "Ajudar a desenvolver Wireframes e Protótipos de interfaces web e mobile;",
+        "Testar usabilidade e navegabilidade de aplicativos"
+      ],
+      "requisitos": [
+        "Cursar graduação ou técnico em áreas afins;",
+        "Boa comunicação, organização, criatividade e trabalho em equipe;",
+        "Disponibilidade para estagiar presencialmente em Itapeva/SP"
+      ]
+    },
+    {
+      "id": 3,
+      "vaga": "Analista de Marketingㅤ",
+      "description": "Cuida da análise das estratégias e resultados de marketing dentro da empresa",
+      "atividades": [
+        "Estuda o mercado e a concorrência;",
+        "Elabora estratégias certeiras;",
+        "Acompanha e mensura os resultados das ações;"
+      ],
+      "requisitos": [
+        "Cursar graduação ou técnico em áreas afins;",
+        "Boa comunicação, organização, criatividade e trabalho em equipe;",
+        "Disponibilidade para estagiar presencialmente em Itapeva/SP"
+      ]
+    },
+    {
+      "id": 4,
+      "vaga": "Analista Big Data Senior",
+      "description": "Cuida da gestão e a análise de dados, a fim de assegurar eficiência e rentabilidade para a empresa, além de propor ideias inovadoras para o negócio",
+      "atividades": [
+        "Limpar e organizar dados para descartar informações irrelevantes;",
+        "Analisar e interpretar os resultados usando ferramentas e técnicas estatísticas;",
+        "Identificar tendências e padrões em conjuntos de dados;",
+        "Identificar novas oportunidades para melhoria de processos;"
+      ],
+      "requisitos": [
+        "Cursar graduação ou técnico em áreas afins;",
+        "Boa comunicação, organização, criatividade e trabalho em equipe;",
+        "Disponibilidade para estagiar presencialmente em Itapeva/SP"
+      ]
+    }
+  ]
+}

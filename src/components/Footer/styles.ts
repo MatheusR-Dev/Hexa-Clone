@@ -31,6 +31,7 @@ export const ContactInfo = styled.div`
   align-items: center;
   @media (max-width: 768px) {
   flex-direction: column;
+  margin-bottom: 35px;
 }
 `;
 

@@ -96,6 +96,7 @@ export const Hamburguer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
   @media (min-width: 769px) {
     display: none;
   }
@@ -146,6 +147,7 @@ export const Links = styled.a`
 export const HLink = styled(Link)`
   cursor: pointer;
   padding-top: 20px;
+  text-decoration: none;
 
   font-size: 20px;
   font-weight: 500;
@@ -210,6 +212,7 @@ export const StyledLink = styled(Link)`
   padding: 0.2em 0;
 
   ::after {
+    cursor: pointer;
     content: "";
     position: absolute;
     bottom: -10px;

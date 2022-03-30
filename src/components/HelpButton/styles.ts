@@ -24,4 +24,8 @@ export const Help = styled.a`
   bottom: 5%;
 
   transition: all 0.3s ease 0s;
+
+  @media (max-width: 768px) {
+    z-index: 0;
+  }
 `;
