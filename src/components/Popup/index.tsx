@@ -18,6 +18,7 @@ import { api } from "../../services/api";
 import { VagasProps } from "./types";
 import { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
+import { Link } from "react-router-dom";
 
 interface Props {
   Hidden?: boolean;
@@ -63,8 +64,9 @@ const Popupe = ({ Hidden, Open, TVaga, Description }: Props) => {
             <ReqItems>{requisitos}</ReqItems>
             )}
             </Require>
-
-            <SendButton>Enviar meu perfil</SendButton>
+            <Link to="/register">
+              <SendButton>Enviar meu perfil</SendButton>
+            </Link>
           </About>
         ))}
       </PopDiv>

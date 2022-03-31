@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from '../../pages/Home/Layout';
 import Vagas from '../../pages/Vagas'
+import Register from '../../pages/SendProfiles'
 
 const Landing: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Landing: React.FC = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/vagas" component={Vagas} />
+        <Route exact path="/register" component={Register} />
       </Switch>
     </>
   );
