@@ -46,8 +46,7 @@ const Vagas = ( ) => {
       TVaga={data.vaga}
       Description={data.description}
       Open={() =>  {
-        setIsOpenModal(false)
-        console.log(selectedId)}}
+        setIsOpenModal(false)}}
       />
       ))}
       
@@ -66,7 +65,6 @@ const Vagas = ( ) => {
             onClick={() => {
           setIsOpenModal(!false)
           setSelectedId(vagas.IdVagas)
-          console.log(selectedId)
           }}/>
           ))}
           </Dive>

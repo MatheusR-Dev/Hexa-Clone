@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Pasta from "../../assets/pasta.svg";
+import newPasta from "../../assets/newpasta.svg"
 import Linknd from "../../assets/linkend.svg";
 import Web from "../../assets/web.svg";
 import {
@@ -20,7 +21,10 @@ import {
   Logo,
   InputUrl,
   MediaLinks,
+  Remove,
+  BtnSubmit,
 } from "./styles";
+import { useEffect } from "react";
 
 interface Props {
   target?: any;
@@ -29,11 +33,37 @@ interface Props {
 
 export function Register() {
   //   const {register, handleSubmit} = useForm();
-  const [ teste, setTeste ] = useState('')
+  const [ text, setText ] = useState('Escolha o arquivo')
+  const [ inputValue, setInputValue ] = useState('')
+  const [ image, setImg ] = useState(Pasta)
+  const [ borda, setBorda ] = useState(true)
+  const [ off, setOff ] = useState(true)
+
   function handleChange(event: Props) {
-    setTeste(event.target.value);
+    if(event.target.files[0].name.length > 33){
+    setInputValue(event.target.files[0].name.slice(0, 35) + '...' + event.target.files[0].name.slice(-6));
+  } else {
+    setInputValue(event.target.files[0].name)
   }
-  
+}
+
+  function Switch () {
+    if (off === false){
+      setText('Escolha o arquivo')
+      setImg(Pasta)
+      setBorda(true)
+      setOff(true)
+    }
+  }
+
+  useEffect(() => {
+    if(inputValue !== ''){
+      setText(inputValue)
+      setImg(newPasta)
+      setBorda(false)
+      setOff(false)
+    }
+  }, [inputValue])
 
 
   return (
@@ -91,16 +121,17 @@ export function Register() {
             Curriculo <span> *</span>
           </label>
           <div>
-            <Insert>
-             {true ? 'Escolha o arquivo' : teste }
+            <Insert borda={borda} larg={borda}>
+              {text}
               <input
                 type="file"
                 accept=".pdf,.doc,.dox,.png,.jpg"
                 style={{ display: `none` }}
                 onChange={handleChange}
               />
-              <img src={Pasta} alt="icone" />
+              <img src={image} alt="icone" />
             </Insert>
+            <Remove disp={off} onClick={Switch}>Remover</Remove>
           </div>
 
           <WebLabel>Perfil Linkedin</WebLabel>
@@ -114,6 +145,9 @@ export function Register() {
             <Logo src={Web} alt="Linknd" />
             <InputUrl type="text" placeholder="URL" />
           </MediaLinks>
+          <BtnSubmit>
+            <button>Enviar</button>
+          </BtnSubmit>
         </Form>
       </FormContain>
     </Container>

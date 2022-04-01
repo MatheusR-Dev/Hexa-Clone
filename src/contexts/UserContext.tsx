@@ -17,7 +17,7 @@ const initialValue = {
   selectedId: -1,
   setSelectedId: () => {},
 }
-console.log(initialValue.selectedId)
+
 export const UserContext = createContext<UserContextType>(initialValue);
 
 export const UserProvider = ({ children }: UserContextProps) => {

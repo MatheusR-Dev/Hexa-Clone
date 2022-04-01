@@ -2,13 +2,18 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 120vh;
-  padding-top: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
-export const FormContain = styled.form`
-  width: 25%;
-  margin: auto;
+export const FormContain = styled.div`
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+  width: 600px;
+  margin-top: 200px;
   background: #fff;
 
   > div {
@@ -113,35 +118,41 @@ export const Input = styled.input`
   color: #979eaf;
 `;
 
-export const Insert = styled.label`
+interface Props {
+  borda?: boolean
+  larg?: boolean
+}
+
+export const Insert = styled.label<Props>`
   background-position: center center;
   background-size: 30px;
   background-repeat: no-repeat;
 
   border-radius: 10px;
-  border: 4px dashed rgb(229, 236, 248);
-  
+  border: ${(props) => (props.borda ? '4px dashed rgb(229, 236, 248)' : '2px solid rgb(16, 130, 255);')};
   color: #000;
   cursor: pointer;
 
-  -moz-box-align: center;
   align-items: center;
-  -moz-box-pack: center;
-  justify-content: center;
-  text-align: right;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row-reverse;
 
-  width: 235px;
+  width: ${(props) => (props.larg ? `235px` : `450px`)};
+  @media (max-width: 480px) {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  width: ${(props) => (props.larg ? `235px` : `95%`)};
+  }
+  /* width: 235px; */
   height: 72px;
-  padding-top: 20px;
-  padding-right: 40px;
-
   font-weight: 500;
 
   > img {
     width: 28px;
-    display: block;
-    margin-top: -25px;
     margin-left: 20px;
+    margin-right: 10px;
+    display: block;
   }
 `;
 
@@ -164,4 +175,37 @@ export const InputUrl = styled(Input)`
 export const MediaLinks = styled.div`
   margin: 0;
   padding: 0;
+`;
+
+interface SpanProps {
+  disp?: boolean
+}
+
+export const Remove = styled.span<SpanProps>`
+  margin-left:30px;
+  margin-top: 25px;
+
+  display: ${(props) => (props.disp ? 'none;' : 'inline;')};
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #979EAF;
+`;
+
+export const BtnSubmit = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  > button {
+  width: 262px;
+  height: 72px;
+  background: #EB3340;
+  color: #fff;
+
+  border: 2px #EB3340 solid;
+  border-radius: 12px;
+
+  font-size: 20px;
+  }
 `;
