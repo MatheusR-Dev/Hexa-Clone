@@ -3,5 +3,6 @@ export interface VagasProps {
   vaga: string;
   description: string;
   atividades: [];
-  requisitos: [] 
+  requisitos: [];
+  rota: string; 
 }

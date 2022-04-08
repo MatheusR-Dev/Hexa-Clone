@@ -20,14 +20,21 @@ export const FormContain = styled.div`
     margin-bottom: 35px;
     > h2 {
       font-size: 24px;
+      @media (max-width: 600px){
+      text-align: center;
+  }
     }
   }
 `;
 
 export const Align = styled.div`
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
+  @media (max-width: 600px){
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  }
 `;
 
 export const Need = styled.h4`
@@ -193,16 +200,31 @@ export const Remove = styled.span<SpanProps>`
   color: #979EAF;
 `;
 
+export const FileDiv = styled.div`
+@media (max-width: 600px){
+  width: 100%;
+}
+`;
+
 export const BtnSubmit = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-bottom: 20px;
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+  
   > button {
   width: 262px;
   height: 72px;
   background: #EB3340;
   color: #fff;
 
+  :hover {
+    background: rgb(205, 2, 13);
+  }
+
+  cursor: pointer;
   border: 2px #EB3340 solid;
   border-radius: 12px;
 

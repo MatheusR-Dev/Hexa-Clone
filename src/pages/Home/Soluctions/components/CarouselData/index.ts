@@ -26,6 +26,7 @@ import MBankTraco from "../../../../../assets/tracinhoMicroBank.svg";
 
 export const Data = [
   {
+    Id: 1,
     Title: "Seu banco digital está pronto!",
     Text: "Comece sua Fintech, sem grandes investimentos, sem burocracia e de forma super ágil.",
     IconWeb: Icon, 
@@ -44,6 +45,7 @@ export const Data = [
     Hidden2: true,
   },
   {
+    Id: 2,
     Title: "Carteira whitelabel",
     Text: "A carteira digital com a sua marca. Potencialize o seu negócio fidelizando seus clientes  oferecendo o melhor do bancos digitais.",
     IconWeb: Icon, 
@@ -62,6 +64,7 @@ export const Data = [
     Hidden2: false,
   },
   {
+    Id: 3,
     Title: "Getz para entregadores",
     Text: "Você que faz entregas e deseja ser um entregador Getz Food, baixe o app e venha fazer parte do Getz Entrega.",
     IconWeb: Icon, 
@@ -80,6 +83,7 @@ export const Data = [
     Hidden2: false,
   },
   {
+    Id: 4,
     Title: "Paixão por delivery",
     Text: "Peça seu delivery de comida de forma fácil e rápida! Também aproveite os melhores cupons e ganhe cashback em suas compras.",
     IconWeb: Icon, 
@@ -98,6 +102,7 @@ export const Data = [
     Hidden2: false,
   },
   {
+    Id: 5,
     Title: "Gerencie seu restaurante no Getz Food!",
     Text: "Receba pedidos, gerencie sua loja, acompanhe seu desempenho e receba feedback de clientes!",
     IconWeb: Icon, 
@@ -116,6 +121,7 @@ export const Data = [
     Hidden2: true,
   },
   {
+    Id: 6,
     Title: "Acompanhe a venda de representantes e prepostos.",
     Text: "Potencialize suas vendas, acompanhe seus clientes. Ferramenta ideal para indústrias, varejo e distribuidoras.",
     IconWeb: Icon, 
@@ -134,6 +140,7 @@ export const Data = [
     Hidden2: false,
   },
   {
+    Id: 7,
     Title: "Hexarádio, o player online para a sua rádio",
     Text: "Com a hexarádio você tem o seu próprio player para transmitir sua rádio em todo lugar e para qualquer pessoa.",
     IconWeb: Icon, 

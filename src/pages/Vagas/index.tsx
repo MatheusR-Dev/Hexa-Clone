@@ -60,6 +60,7 @@ const Vagas = ( ) => {
           <Dive>
           {VagasData.map((vagas) => (
             <Cards 
+            key={vagas.IdVagas}
             src={vagas.Icon} 
             Texto={vagas.Text} 
             onClick={() => {

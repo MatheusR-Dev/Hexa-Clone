@@ -64,7 +64,7 @@ const Popupe = ({ Hidden, Open, TVaga, Description }: Props) => {
             <ReqItems>{requisitos}</ReqItems>
             )}
             </Require>
-            <Link to="/register">
+            <Link to={data.rota}>
               <SendButton>Enviar meu perfil</SendButton>
             </Link>
           </About>

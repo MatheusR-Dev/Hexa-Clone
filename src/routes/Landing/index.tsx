@@ -12,7 +12,9 @@ const Landing: React.FC = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/vagas" component={Vagas} />
-        <Route exact path="/register" component={Register} />
+        <Route exact path="/register/:id">
+          <Register />
+        </Route>
       </Switch>
     </>
   );

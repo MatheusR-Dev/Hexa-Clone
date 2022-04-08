@@ -40,7 +40,7 @@ export default function Carousel() {
         >
           {Data.map((datas, index) => (
             <ContainerButton
-              key={index}
+              key={datas.Id}
               onClick={() => {
               setProps(datas);
               setItemIndex(index);

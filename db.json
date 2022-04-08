@@ -15,7 +15,8 @@
         "Cursar graduação ou técnico em áreas afins;",
         "Boa comunicação, organização, criatividade e trabalho em equipe;",
         "Disponibilidade para estagiar presencialmente em Itapeva/SP"
-      ]
+      ],
+      "rota": "/register/1"
     },
     {
       "id": 2,
@@ -29,7 +30,8 @@
         "Cursar graduação ou técnico em áreas afins;",
         "Boa comunicação, organização, criatividade e trabalho em equipe;",
         "Disponibilidade para estagiar presencialmente em Itapeva/SP"
-      ]
+      ],
+      "rota": "/register/2"
     },
     {
       "id": 3,
@@ -44,7 +46,8 @@
         "Cursar graduação ou técnico em áreas afins;",
         "Boa comunicação, organização, criatividade e trabalho em equipe;",
         "Disponibilidade para estagiar presencialmente em Itapeva/SP"
-      ]
+      ],
+      "rota": "/register/3"
     },
     {
       "id": 4,
@@ -60,7 +63,18 @@
         "Cursar graduação ou técnico em áreas afins;",
         "Boa comunicação, organização, criatividade e trabalho em equipe;",
         "Disponibilidade para estagiar presencialmente em Itapeva/SP"
-      ]
+      ],
+      "rota": "/register/4"
     }
-  ]
+  ],
+  "dados": {
+    "fullName": "matheus",
+    "email": "m",
+    "phoneNumber": 14,
+    "state": "RO",
+    "city": "Ariquemes",
+    "linknd": "a",
+    "website": "b",
+    "curriculum": {}
+  }
 }
