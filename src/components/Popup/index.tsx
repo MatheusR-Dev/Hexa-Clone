@@ -37,7 +37,6 @@ const Popupe = ({ Hidden, Open, TVaga, Description }: Props) => {
     });
   }, [selectedId]);
 
-
   return (
     <Container Hidden={Hidden}>
       <PopDiv>
@@ -57,11 +56,11 @@ const Popupe = ({ Hidden, Open, TVaga, Description }: Props) => {
             <SubT>Atividades</SubT>
             <Require>
               {data.atividades.map((atividades) => 
-              <ReqItems>{atividades}</ReqItems>)}
+              <ReqItems key={data.id}>{atividades}</ReqItems>)}
             </Require>
             <SubT>Requisitos</SubT>
             <Require>{data.requisitos.map((requisitos) =>
-            <ReqItems>{requisitos}</ReqItems>
+            <ReqItems key={data.id}>{requisitos}</ReqItems>
             )}
             </Require>
             <Link to={data.rota}>

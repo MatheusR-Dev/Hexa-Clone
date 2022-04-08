@@ -26,7 +26,7 @@ interface Props {
 
 const Vagas = ( ) => {
   window.scrollTo(0, 0);
-  const { isOpenModal, setIsOpenModal } = useContext(UserContext)
+  const [ isOpenModal, setIsOpenModal ] = useState(false)
   const { selectedId, setSelectedId } = useContext(UserContext)
   const [ newVaga, setNewVaga ] = useState<Props[]>([])
 
@@ -60,7 +60,7 @@ const Vagas = ( ) => {
           <Dive>
           {VagasData.map((vagas) => (
             <Cards 
-            key={vagas.IdVagas}
+            key={vagas.Id}
             src={vagas.Icon} 
             Texto={vagas.Text} 
             onClick={() => {
