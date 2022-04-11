@@ -26,15 +26,15 @@ export const Content = styled.div`
   text-align: left;
   @media (max-width: 670px) {
     width: 80%;
-    height: 34%;
+    height: 260px;
   }
   @media (max-width: 600px) {
     width: 80%;
-    height: 38%;
+    height: 290px;
   }
   @media (max-width: 400px) {
     width: 80%;
-    height: 40%;
+    height: 260px;
     text-align: center;
     padding: 20px 20px 0 20px;
   }

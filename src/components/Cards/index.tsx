@@ -1,16 +1,16 @@
 import React from 'react';
-import { CardBtn, CardIcon, Container, Vaga } from './styles';
+import { CardBtn, CardIcon, Container, CardText } from './styles';
 
 interface CardsProps {
-  Texto?: string | undefined
+  Text?: string | undefined
   src?: string | undefined
   onClick?: () => void
 }
 
-const Cards = ({Texto, src, onClick} : CardsProps) => {
+const Cards = ({Text, src, onClick} : CardsProps) => {
   return (
     <Container>
-      <Vaga>{Texto}</Vaga>
+      <CardText>{Text}</CardText>
       <CardIcon src={src}></CardIcon>
       <CardBtn onClick={onClick}>Ver Vaga</CardBtn>
     </Container>

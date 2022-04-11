@@ -1,4 +1,5 @@
 import React from 'react';
+import HelpButton from '../../../components/HelpButton';
 import Main from '../Main';
 import Soluctions from '../Soluctions';
 
@@ -17,6 +18,8 @@ const Layout: React.FC<MainProps> = () => {
         <Main/>
 
         <Soluctions/>
+
+        <HelpButton/>
 
       </Container>
     </>

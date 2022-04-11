@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 import {
   ConfirmButton,
@@ -6,12 +6,12 @@ import {
   Content,
   ProfileSubText,
   ProfileText,
-  BtnDiv,
-} from "./styles";
+  BtnDiv
+} from './styles'
 
 interface Props {
-  hidden: boolean;
-  onClick: () => void;
+  hidden: boolean
+  onClick: () => void
 }
 
 const Profile = ({ hidden, onClick }: Props) => {
@@ -27,7 +27,7 @@ const Profile = ({ hidden, onClick }: Props) => {
         </BtnDiv>
       </Content>
     </Container>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile

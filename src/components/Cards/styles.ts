@@ -8,7 +8,6 @@ export const Container = styled.div`
   
   padding: 3% 2% 3% 3%;
 
-  /* border: 2px solid red; */
   border-radius: 14px;
   box-shadow: rgba(33, 47, 72, 0.12) 0px 2px 6px;
 
@@ -17,7 +16,7 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const Vaga = styled.p`
+export const CardText = styled.p`
   font: 20px 'Museo Sans', sans-serif;
   font-weight: 500;
   text-align: center;

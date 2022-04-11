@@ -27,6 +27,11 @@ export const Grid = styled.div`
 `;
 
 export const Box = styled.div`
+  @media (max-width: 1370px) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  } 
   padding-top: 10rem;
   @media (max-width: 768px) {
   padding-top: 6rem;
@@ -46,6 +51,7 @@ export const Message = styled.h1`
   font-weight: bold;
   font-size: 120px;
   padding-bottom: 15%;
+  max-width: 1125px;
   @media (max-width: 768px){
   padding-right: 0;
   font-size: 110px;
@@ -105,28 +111,20 @@ export const Join = styled.a`
 `;
 
 export const Cup = styled.div`
+  display: flex;
+  justify-content: center;
   @media (max-width: 1369px) {
   grid-row: 2;
   }
   
-  @media (min-width: 1370px) {
-  grid-column: 2;
+  @media (max-width: 1370px) {
+  grid-column-start: 1;
+  grid-column-end: 3;
   } 
 `;
 
 export const CupImage = styled.img`
-  position: relative;
-  left: 50%;
-
-  @media (max-width: 768px) {
-  top: 4rem;
-  left: 12rem;
-  }
   @media (max-width: 600px) {
-  top: 4rem;
-  left: 4rem;
-  }
-  @media (max-width: 400px) {
-  width: 70%;
+    width: 50%;
   }
 `;

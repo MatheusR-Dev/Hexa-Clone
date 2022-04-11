@@ -62,7 +62,7 @@ const Vagas = ( ) => {
             <Cards 
             key={vagas.Id}
             src={vagas.Icon} 
-            Texto={vagas.Text} 
+            Text={vagas.Text} 
             onClick={() => {
           setIsOpenModal(!false)
           setSelectedId(vagas.IdVagas)

@@ -23,6 +23,10 @@ const Header: React.FC = () => {
   const [animate, setAnimate] = useState(false);
   const [change, setChange] = useState(false);
 
+  function Scroll () {
+    window.scrollTo(0, 1200);
+  }
+
   function handleAnimation() {
     if (playAnimation === false && hiddenList === true) {
       setPlayAnimation(true);
@@ -56,7 +60,7 @@ const Header: React.FC = () => {
           <Icon src={Logo} alt="Logo"></Icon>
         </Link>
         <About>
-          <Redirect>Soluções</Redirect>
+          <Redirect onClick={Scroll }>Soluções</Redirect>
           <Redirect>Sobre Nós</Redirect>
           <Redirect>Contato </Redirect>
           <StyledLink to="/vagas">Vagas</StyledLink>

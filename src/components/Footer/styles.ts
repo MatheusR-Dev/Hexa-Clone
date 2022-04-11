@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const Container = styled.div`
 `;
 
-export const Foooter = styled.div`
+export const FooterContent = styled.div`
   width: 100%;
   height: 35.5rem;
   
@@ -17,6 +17,7 @@ export const Foooter = styled.div`
   background-color: #F5F8FD;
   @media (max-width: 768px) {
   height: 55.5rem;
+  padding-top: 50px;
   }
 `;
 
@@ -71,12 +72,10 @@ export const About = styled.div`
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   text-align: center;
-
 }
 @media (max-width: 600px) {
   padding: 0;
   }
-  
 `;
 
 export const SubTitle = styled.h5`
@@ -90,7 +89,7 @@ export const List = styled.ul`
   list-style: none;
 `;
 
-export const Itens = styled.li`
+export const Items = styled.li`
 margin-bottom: 8px;
 `;
 
@@ -121,19 +120,24 @@ export const Column = styled.div`
 
   display: flex;
   flex-direction: row;
+  @media (max-width: 768px) {
+  :first-child {
+    margin-bottom: 50px;
+  }
+}
 `;
 
 export const Content = styled.div`
   width: 100%;
   height: 100%;
-  
+
   display: flex;
   flex-direction: column;
 
   align-items: auto;
 `;
 
-export const Div = styled.div`
+export const FooterTextDiv = styled.div`
   width: 100%;
   height: 100px;
   background-color: white;
@@ -142,7 +146,7 @@ export const Div = styled.div`
   align-items: center;
 `;
 
-export const Texte = styled.p`
+export const FooterText = styled.p`
   text-align: center;
   font-weight: 400;
   font-size: 20px;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Help = styled.a`
   width: 12.5rem;
-  z-index: 9999;
+  z-index: 999;
   font-weight: 500;
 
   color: #231F20;

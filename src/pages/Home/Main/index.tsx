@@ -12,7 +12,6 @@ import {
 } from "./styles";
 import ImgCup from "../../../assets/cup.svg";
 import Header from "../../../components/Header";
-import HelpButton from "../../../components/HelpButton";
 import { Link } from "react-router-dom";
 
 const Main: React.FC = () => {
@@ -32,7 +31,6 @@ const Main: React.FC = () => {
         </Box>
 
         <Cup>
-          <HelpButton />
           <CupImage src={ImgCup} alt="Cup Image" />
         </Cup>
       </Grid>
