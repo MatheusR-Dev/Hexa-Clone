@@ -67,16 +67,5 @@
       "rota": "/register/4"
     }
   ],
-  "dados": {
-    "fullName": "Matheus Rocha",
-    "email": "matheusfelipelr@gmail.com",
-    "phoneNumber": 15997730766,
-    "state": "RO",
-    "city": "Alta Floresta D'Oeste",
-    "linknd": "www.123.com.br",
-    "website": "www.321.com.br",
-    "curriculum": {
-      "0": {}
-    }
-  }
+  "dados": []
 }

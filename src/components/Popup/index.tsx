@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 import {
   About,
   Container,
@@ -9,33 +9,33 @@ import {
   SendButton,
   SubT,
   TitleVaga,
-  Vaga,
-} from "./styles";
-import Close from "../../assets/close.svg";
-import LogoHexa from "../../assets/logo.svg";
-import { useEffect } from "react";
-import { api } from "../../services/api";
-import { VagasProps } from "./types";
-import { useContext } from "react";
-import { UserContext } from "../../contexts/UserContext";
-import { Link } from "react-router-dom";
+  Vaga
+} from './styles'
+import Close from '../../assets/close.svg'
+import LogoHexa from '../../assets/logo.svg'
+import { useEffect } from 'react'
+import { api } from '../../services/api'
+import { VagasProps } from './types'
+import { useContext } from 'react'
+import { UserContext } from '../../contexts/UserContext'
+import { Link } from 'react-router-dom'
 
 interface Props {
-  Hidden?: boolean;
-  Open?: () => void;
-  TVaga?: string;
-  Description?: string;
+  Hidden?: boolean
+  Open?: () => void
+  TVaga?: string
+  Description?: string
 }
 
 const Popupe = ({ Hidden, Open, TVaga, Description }: Props) => {
-  const [itemsVaga, setItemsVaga] = useState<VagasProps[]>([]);
-  const { selectedId } = useContext(UserContext);
+  const [itemsVaga, setItemsVaga] = useState<VagasProps[]>([])
+  const { selectedId } = useContext(UserContext)
 
   useEffect(() => {
     api.get<VagasProps[]>(`vagas/?id=${selectedId}`).then((response) => {
-      setItemsVaga(response.data);
-    });
-  }, [selectedId]);
+      setItemsVaga(response.data)
+    })
+  }, [selectedId])
 
   return (
     <Container Hidden={Hidden}>
@@ -55,13 +55,15 @@ const Popupe = ({ Hidden, Open, TVaga, Description }: Props) => {
           <About key={data.id}>
             <SubT>Atividades</SubT>
             <Require>
-              {data.atividades.map((atividades) => 
-              <ReqItems key={data.id}>{atividades}</ReqItems>)}
+              {data.atividades.map((atividades, index) => (
+                <ReqItems key={index}>{atividades}</ReqItems>
+              ))}
             </Require>
             <SubT>Requisitos</SubT>
-            <Require>{data.requisitos.map((requisitos) =>
-            <ReqItems key={data.id}>{requisitos}</ReqItems>
-            )}
+            <Require>
+              {data.requisitos.map((requisitos, index) => (
+                <ReqItems key={index}>{requisitos}</ReqItems>
+              ))}
             </Require>
             <Link to={data.rota}>
               <SendButton>Enviar meu perfil</SendButton>
@@ -70,7 +72,7 @@ const Popupe = ({ Hidden, Open, TVaga, Description }: Props) => {
         ))}
       </PopDiv>
     </Container>
-  );
-};
+  )
+}
 
-export default Popupe;
+export default Popupe

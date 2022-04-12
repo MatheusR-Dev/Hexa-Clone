@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Box,
   Cup,
@@ -8,11 +8,11 @@ import {
   Soluctions,
   CupImage,
   Grid,
-  Content,
-} from "./styles";
-import ImgCup from "../../../assets/cup.svg";
-import Header from "../../../components/Header";
-import { Link } from "react-router-dom";
+  Content
+} from './styles'
+import ImgCup from '../../../assets/cup.svg'
+import Header from '../../../components/Header'
+import { Link } from 'react-router-dom'
 
 const Main: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const Main: React.FC = () => {
           <Message>FOR YOUR DISRUPTIVE IDEAS.</Message>
           <Content>
             <Soluctions>Nossas soluções</Soluctions>
-            <Link to="/vagas" style={{textDecoration: "none"}}>
+            <Link to="/vagas" style={{ textDecoration: 'none' }}>
               <Join>Entre para o time!</Join>
             </Link>
           </Content>
@@ -35,7 +35,7 @@ const Main: React.FC = () => {
         </Cup>
       </Grid>
     </Container>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

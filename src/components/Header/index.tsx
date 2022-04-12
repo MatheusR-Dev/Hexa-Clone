@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Logo from "../../assets/logo.svg"
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Logo from '../../assets/logo.svg'
 
 import {
   About,
@@ -14,30 +14,26 @@ import {
   AnimContain,
   HContain,
   StyledLink,
-  HLink,
-} from "./styles";
+  HLink
+} from './styles'
 
 const Header: React.FC = () => {
-  const [playAnimation, setPlayAnimation] = useState(false);
-  const [hiddenList, setHiddenList] = useState(true);
-  const [animate, setAnimate] = useState(false);
-  const [change, setChange] = useState(false);
-
-  function Scroll () {
-    window.scrollTo(0, 1200);
-  }
+  const [playAnimation, setPlayAnimation] = useState(false)
+  const [hiddenList, setHiddenList] = useState(true)
+  const [animate, setAnimate] = useState(false)
+  const [change, setChange] = useState(false)
 
   function handleAnimation() {
     if (playAnimation === false && hiddenList === true) {
-      setPlayAnimation(true);
-      setHiddenList(false);
-      setAnimate(true);
-      setChange(true);
+      setPlayAnimation(true)
+      setHiddenList(false)
+      setAnimate(true)
+      setChange(true)
     } else {
-      setPlayAnimation(false);
-      setHiddenList(true);
-      setAnimate(false);
-      setChange(false);
+      setPlayAnimation(false)
+      setHiddenList(true)
+      setAnimate(false)
+      setChange(false)
     }
   }
   return (
@@ -60,14 +56,14 @@ const Header: React.FC = () => {
           <Icon src={Logo} alt="Logo"></Icon>
         </Link>
         <About>
-          <Redirect onClick={Scroll }>Soluções</Redirect>
+          <Redirect>Soluções</Redirect>
           <Redirect>Sobre Nós</Redirect>
           <Redirect>Contato </Redirect>
           <StyledLink to="/vagas">Vagas</StyledLink>
         </About>
       </HContain>
     </Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

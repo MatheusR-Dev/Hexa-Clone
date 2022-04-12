@@ -71,7 +71,7 @@ export function Register() {
       } = formData
       // const Dados = new FormData();
       // Dados.append("curriculum", curriculum[0])
-      const { data, error } = await (
+      await (
         await api.services
       ).getData({
         fullName: fullName,
