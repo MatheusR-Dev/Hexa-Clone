@@ -8,6 +8,9 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     height: 1500px;
   }
+  @media (max-width: 480px) {
+    height: 900px;
+  }
 `
 
 /* Body */
@@ -36,6 +39,9 @@ export const Box = styled.div`
   @media (max-width: 768px) {
     padding-top: 6rem;
   }
+  @media (max-width: 480px) {
+    padding-top: 3rem;
+  }
 `
 
 export const Content = styled.div`
@@ -61,10 +67,10 @@ export const Message = styled.h1`
     font-size: 90px;
   }
   @media (max-width: 600px) {
-    font-size: 80px;
+    font-size: 72px;
   }
-  @media (max-width: 500px) {
-    font-size: 60px;
+  @media (max-width: 480px) {
+    font-size: 48px;
   }
 `
 

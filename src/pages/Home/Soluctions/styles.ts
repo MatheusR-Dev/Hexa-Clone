@@ -1,20 +1,20 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
   height: 1200px;
-`;
+`
 
 export const TextBox = styled.h1`
   text-align: center;
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 20px;
-`;
+`
 
 export const SubTextBox = styled.p`
   text-align: center;
   font-weight: 500;
   font-size: 28px;
-  color: #979EAF;
-`;
+  color: #979eaf;
+`

@@ -1,11 +1,7 @@
-import React from "react";
-import Carousel from "../Soluctions/components/Carousel";
-import {
-  Container,
-  SubTextBox,
-  TextBox,
-} from "./styles";
-import Footer from "../../../components/Footer";
+import React from 'react'
+import Carousel from '../Soluctions/components/Carousel'
+import { Container, SubTextBox, TextBox } from './styles'
+import Footer from '../../../components/Footer'
 
 const Soluctions: React.FC = () => {
   return (
@@ -16,7 +12,7 @@ const Soluctions: React.FC = () => {
       <Carousel />
       <Footer />
     </Container>
-  );
-};
+  )
+}
 
-export default Soluctions;
+export default Soluctions
