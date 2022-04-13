@@ -10,6 +10,10 @@ export const TextBox = styled.h1`
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 20px;
+
+  @media (max-width: 480px) {
+    font-size: 38px;
+  }
 `
 
 export const SubTextBox = styled.p`
@@ -17,4 +21,8 @@ export const SubTextBox = styled.p`
   font-weight: 500;
   font-size: 28px;
   color: #979eaf;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 `

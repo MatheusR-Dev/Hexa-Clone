@@ -67,5 +67,19 @@
       "rota": "/register/4"
     }
   ],
-  "dados": []
+  "dados": [
+    {
+      "fullName": "m",
+      "email": "m",
+      "phoneNumber": 9,
+      "state": "RR",
+      "city": "Amajari",
+      "linknd": "www",
+      "website": "rao123",
+      "curriculum": {
+        "0": {}
+      },
+      "id": 1
+    }
+  ]
 }
