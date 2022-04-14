@@ -41,7 +41,7 @@ export const Content = styled.div`
 `
 
 export const ProfileText = styled.div`
-  font-size: 25px;
+  font-size: 1.5rem; //24px
   font-weight: 600;
 `
 
@@ -69,7 +69,7 @@ export const ConfirmButton = styled.button`
   border-radius: 10px;
   background-color: #eb3340;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem; //24px
   @media (max-width: 670px) {
   }
 `

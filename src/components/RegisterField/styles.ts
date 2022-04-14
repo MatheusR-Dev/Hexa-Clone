@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100vw;
@@ -6,10 +6,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 export const FormContain = styled.div`
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     width: 90%;
   }
   width: 600px;
@@ -19,36 +19,36 @@ export const FormContain = styled.div`
   > div {
     margin-bottom: 35px;
     > h2 {
-      font-size: 24px;
-      @media (max-width: 600px){
-      text-align: center;
-  }
+      font-size: 1.5rem; //24px
+      @media (max-width: 600px) {
+        text-align: center;
+      }
     }
   }
-`;
+`
 
 export const Align = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: 600px){
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
-`;
+`
 
 export const Need = styled.h4`
   font-weight: 300;
   > span {
     color: rgb(241, 81, 27);
   }
-`;
+`
 
 export const Regis = styled.h3`
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1rem; //16px
   font-weight: 300;
-`;
+`
 
 export const Form = styled.form`
   display: flex;
@@ -59,7 +59,7 @@ export const Form = styled.form`
   > label {
     padding-top: 20px;
     padding-bottom: 10px;
-    font-size: 16px;
+    font-size: 1rem; //16px
 
     > span {
       color: rgb(241, 81, 27);
@@ -71,7 +71,7 @@ export const Form = styled.form`
     display: flex;
     flex-direction: row;
   }
-`;
+`
 
 export const StateDiv = styled.div`
   display: flex;
@@ -84,7 +84,7 @@ export const StateDiv = styled.div`
       color: rgb(241, 81, 27);
     }
   }
-`;
+`
 
 export const SelectState = styled.select`
   border: 2px solid rgb(229, 236, 248);
@@ -96,8 +96,8 @@ export const SelectState = styled.select`
   padding: 12px 24px;
   margin-bottom: 40px;
 
-  font-size: 16px;
-`;
+  font-size: 1rem; //16px
+`
 
 export const CityDiv = styled.div`
   display: flex;
@@ -110,20 +110,20 @@ export const CityDiv = styled.div`
       color: rgb(241, 81, 27);
     }
   }
-`;
+`
 
 export const SelectCity = styled(SelectState)`
   margin-left: 20px;
-`;
+`
 
 export const Input = styled.input`
   border: 2px solid rgb(229, 236, 248);
   border-radius: 10px;
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 1rem; //16px
   margin-bottom: 10px;
   color: #979eaf;
-`;
+`
 
 interface Props {
   borda?: boolean
@@ -136,7 +136,10 @@ export const Insert = styled.label<Props>`
   background-repeat: no-repeat;
 
   border-radius: 10px;
-  border: ${(props) => (props.borda ? '4px dashed rgb(229, 236, 248)' : '2px solid rgb(16, 130, 255);')};
+  border: ${(props) =>
+    props.borda
+      ? '4px dashed rgb(229, 236, 248)'
+      : '2px solid rgb(16, 130, 255);'};
   color: #000;
   cursor: pointer;
 
@@ -147,9 +150,9 @@ export const Insert = styled.label<Props>`
 
   width: ${(props) => (props.larg ? `235px` : `450px`)};
   @media (max-width: 480px) {
-  word-break: break-all;
-  overflow-wrap: break-word;
-  width: ${(props) => (props.larg ? `235px` : `95%`)};
+    word-break: break-all;
+    overflow-wrap: break-word;
+    width: ${(props) => (props.larg ? `235px` : `95%`)};
   }
   /* width: 235px; */
   height: 72px;
@@ -161,50 +164,48 @@ export const Insert = styled.label<Props>`
     margin-right: 10px;
     display: block;
   }
-`;
+`
 
-export const WebLabel = styled.label`
-
-`;
+export const WebLabel = styled.label``
 
 export const Logo = styled.img`
   margin: 6px 20px 10px 0;
 
   width: 44px;
   height: 44px;
-`;
+`
 
 export const InputUrl = styled(Input)`
   width: 100%;
   margin-top: 0;
-`;
+`
 
 export const MediaLinks = styled.div`
   margin: 0;
   padding: 0;
-`;
+`
 
 interface SpanProps {
   disp?: boolean
 }
 
 export const Remove = styled.span<SpanProps>`
-  margin-left:30px;
+  margin-left: 30px;
   margin-top: 25px;
 
   display: ${(props) => (props.disp ? 'none;' : 'inline;')};
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem; //16px
   font-weight: 600;
 
-  color: #979EAF;
-`;
+  color: #979eaf;
+`
 
 export const FileDiv = styled.div`
-@media (max-width: 600px){
-  width: 100%;
-}
-`;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`
 
 export const BtnSubmit = styled.div`
   display: flex;
@@ -213,21 +214,21 @@ export const BtnSubmit = styled.div`
   @media (max-width: 600px) {
     justify-content: center;
   }
-  
+
   > button {
-  width: 262px;
-  height: 72px;
-  background: #EB3340;
-  color: #fff;
+    width: 262px;
+    height: 72px;
+    background: #eb3340;
+    color: #fff;
 
-  :hover {
-    background: rgb(205, 2, 13);
+    :hover {
+      background: rgb(205, 2, 13);
+    }
+
+    cursor: pointer;
+    border: 2px #eb3340 solid;
+    border-radius: 12px;
+
+    font-size: 1.25rem; //20px;
   }
-
-  cursor: pointer;
-  border: 2px #EB3340 solid;
-  border-radius: 12px;
-
-  font-size: 20px;
-  }
-`;
+`

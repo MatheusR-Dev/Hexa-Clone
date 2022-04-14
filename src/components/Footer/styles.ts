@@ -55,7 +55,7 @@ export const Logo = styled.img`
 
 export const Address = styled.p`
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem; //20px
   color: #979eaf;
   width: 30rem;
   text-align: right;
@@ -91,7 +91,7 @@ export const About = styled.div`
 
 export const SubTitle = styled.h5`
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem; //20px
 
   margin-bottom: 20px;
 `
@@ -106,7 +106,7 @@ export const Items = styled.li`
 
 export const Item = styled.a`
   font-weight: 200;
-  font-size: 20px;
+  font-size: 1.25rem; //20px
 
   :hover {
     cursor: pointer;
@@ -116,7 +116,7 @@ export const Item = styled.a`
 
 export const StyledLink = styled(Link)`
   font-weight: 200;
-  font-size: 20px;
+  font-size: 1.25rem; //20px
   color: #000;
   text-decoration: none;
   :hover {
@@ -160,6 +160,6 @@ export const FooterTextDiv = styled.div`
 export const FooterText = styled.p`
   text-align: center;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem; //20px
   color: #979eaf;
 `

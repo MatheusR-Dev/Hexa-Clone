@@ -55,22 +55,22 @@ export const Content = styled.div`
 
 export const Message = styled.h1`
   font-weight: bold;
-  font-size: 120px;
+  font-size: 7.5rem; //120px
   padding-bottom: 15%;
   max-width: 1125px;
   @media (max-width: 768px) {
     padding-right: 0;
-    font-size: 110px;
+    font-size: 6.875rem; //110px
     padding-bottom: 15%;
   }
   @media (max-width: 700px) {
-    font-size: 90px;
+    font-size: 5.625rem; //90px
   }
   @media (max-width: 600px) {
-    font-size: 72px;
+    font-size: 4.5rem; //72px
   }
   @media (max-width: 480px) {
-    font-size: 48px;
+    font-size: 3rem; //48px
   }
 `
 

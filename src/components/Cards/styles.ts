@@ -29,7 +29,7 @@ export const CardText = styled.p`
   height: 20%;
 
   @media (max-width: 480px) {
-    font-size: 18px;
+    font-size: 1.125rem; //18px
     margin-top: 8px;
   }
 `
@@ -48,7 +48,7 @@ export const CardBtn = styled.button`
   width: 142px;
   height: 52px;
 
-  font-size: 20px;
+  font-size: 1.25rem; //20px
   cursor: pointer;
 
   :hover {

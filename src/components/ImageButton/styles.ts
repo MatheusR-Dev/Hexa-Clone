@@ -13,11 +13,12 @@ export const ImgButton = styled.img<ImageProps>`
   max-width: 90%;
   height: auto;
 
+  ${(props) => (props.GrayScale ? 'filter: none' : 'filter: grayscale(1);')}
+
   @media (max-width: 480px) {
     width: 70%;
   }
 
-  ${(props) => (props.GrayScale ? 'filter: none' : 'filter: grayscale(1);')}
   @media (max-width: 1300px) {
     width: 90px;
   }

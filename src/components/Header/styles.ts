@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 interface MainProps {
-  active?: boolean;
+  active?: boolean
 }
 
-export const Container = styled.div``;
+export const Container = styled.div``
 
 export const HContain = styled.div`
   width: 100%;
@@ -26,7 +26,7 @@ export const HContain = styled.div`
   @media (max-width: 768px) {
     justify-content: center;
   }
-`;
+`
 
 export const Icon = styled.img`
   width: 175px;
@@ -38,7 +38,7 @@ export const Icon = styled.img`
     width: 140px;
     height: 32px;
   }
-`;
+`
 
 export const About = styled.div`
   display: flex;
@@ -48,7 +48,7 @@ export const About = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 export const Redirect = styled.a`
   color: #231f20;
@@ -61,7 +61,7 @@ export const Redirect = styled.a`
   padding: 0.2em 0;
 
   ::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -10px;
     left: -15px;
@@ -82,9 +82,9 @@ export const Redirect = styled.a`
 
   /* padding-top: 20px; */
 
-  font-size: 16px;
+  font-size: 1rem; //16px
   font-weight: 500;
-`;
+`
 
 export const Hamburguer = styled.div`
   height: 50px;
@@ -100,7 +100,7 @@ export const Hamburguer = styled.div`
   @media (min-width: 769px) {
     display: none;
   }
-`;
+`
 
 export const AnimContain = styled.div<MainProps>`
   width: 100%;
@@ -109,11 +109,11 @@ export const AnimContain = styled.div<MainProps>`
   transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   padding-left: 10px;
   padding-top: 5px;
-  ${(props) => props.active && "box-shadow: #FFFFFF 0px 0px 0px 130vh;"}
-`;
+  ${(props) => props.active && 'box-shadow: #FFFFFF 0px 0px 0px 130vh;'}
+`
 
 interface MostrarProps {
-  show?: boolean;
+  show?: boolean
 }
 
 export const Items = styled.div<MostrarProps>`
@@ -127,14 +127,14 @@ export const Items = styled.div<MostrarProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${(props) => props.show && "display: none;"}
-`;
+  ${(props) => props.show && 'display: none;'}
+`
 
 export const Links = styled.a`
   cursor: pointer;
   padding-top: 20px;
 
-  font-size: 20px;
+  font-size: 1.25rem; //20px
   font-weight: 500;
 
   color: #eb3340;
@@ -142,14 +142,14 @@ export const Links = styled.a`
 
   margin-right: 25px;
   margin-left: 25px;
-`;
+`
 
 export const HLink = styled(Link)`
   cursor: pointer;
   padding-top: 20px;
   text-decoration: none;
 
-  font-size: 20px;
+  font-size: 1.25rem; //20px
   font-weight: 500;
 
   color: #eb3340;
@@ -157,11 +157,11 @@ export const HLink = styled(Link)`
 
   margin-right: 25px;
   margin-left: 25px;
-`;
+`
 
 interface AnimeProps {
-  animate?: boolean;
-  change?: boolean;
+  animate?: boolean
+  change?: boolean
 }
 
 export const Animations = styled.div<AnimeProps>`
@@ -179,7 +179,7 @@ export const Animations = styled.div<AnimeProps>`
     bottom: 30px;
     height: 2px;
     background-color: #eb3340;
-    content: "";
+    content: '';
     position: absolute;
     transition: all 0.5s ease-in-out 0s;
     display: block;
@@ -192,13 +192,13 @@ export const Animations = styled.div<AnimeProps>`
     height: 2px;
     width: 25px;
     background-color: #eb3340;
-    content: "";
+    content: '';
     position: absolute;
     transition: all 0.5s ease-in-out 0s;
     display: block;
     ${(props) => props.animate && `transform: rotateZ(90deg);`}
   }
-`;
+`
 
 export const StyledLink = styled(Link)`
   color: #231f20;
@@ -213,7 +213,7 @@ export const StyledLink = styled(Link)`
 
   ::after {
     cursor: pointer;
-    content: "";
+    content: '';
     position: absolute;
     bottom: -10px;
     left: -15px;
@@ -234,6 +234,6 @@ export const StyledLink = styled(Link)`
 
   /* padding-top: 20px; */
 
-  font-size: 16px;
+  font-size: 1rem; //16px
   font-weight: 500;
-`;
+`
